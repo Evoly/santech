@@ -1822,6 +1822,10 @@ $(document).ready(function () {
             500: {
                 items: 1,
                 nav: false
+            },
+            0: {
+                items: 1,
+                nav: false
             }
         }
     };

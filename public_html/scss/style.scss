@@ -4640,14 +4640,15 @@ p.tab-pane_set_item {
 }
 
 .brand {
-    &_content {
-        padding-bottom: 45px;
+    &_content {       
+        padding-top: 5px;
+        color: $gray;
     }
 
     &_logo-wrapper {
-        width: 250px;
+        width: 24.78%;
         height: 195px;
-        padding-left: 30px;
+        padding-left: 20px;
     }
     &_logo {
         width: 100%;
@@ -4663,7 +4664,8 @@ p.tab-pane_set_item {
             text-align: center;
 
             p {
-                padding-top: 25px;
+                margin-top:  25px;
+                margin-bottom: 0;
             }
             a:hover {
                 opacity: .7;
