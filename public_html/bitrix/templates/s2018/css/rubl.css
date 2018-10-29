@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'rouble';
+  src: url('../fonts/rouble-webfont.eot');
+  src: url('../fonts/rouble-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/rouble-webfont.woff2') format('woff2'),
+       url('../fonts/rouble-webfont.woff') format('woff'),
+       url('../fonts/rouble-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PT Rouble Sans';
+    src: url('../fonts/PTRoubleSans.eot');
+    src: local('PT Rouble Sans'), local('PTRoubleSans'),
+            url('../fonts/PTRoubleSans.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/PTRoubleSans.woff2') format('woff2'),
+            url('../fonts/PTRoubleSans.woff') format('woff'),
+            url('../fonts/PTRoubleSans.ttf') format('truetype'),
+            url('../fonts/PTRoubleSans.svg#PTRoubleSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+span.rub{
+    display: inline!important;
+    font-family: "rouble";
+    visibility: hidden;
+}
+span.rub:before{
+    display: inline;
+    visibility: visible;
+    font-family: "rouble";
+    content: 'a';
+}
+.page .catalogue .item .under span i span.rub:before,
+.page .product-page .item .under span i span.rub:before
+{
+    color: #000000;
+}

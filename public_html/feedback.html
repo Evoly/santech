@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Отзывы</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic-ext" type="text/css" rel="stylesheet" />
+        <link href="bitrix/templates/s2018/css/rubricaxtcn.css" type="text/css" data-template-style="true" rel="stylesheet" />
+        <link href="bitrix/templates/s2018/css/bootstrap.css" type="text/css" data-template-style="true" rel="stylesheet" />
+        <link href="bitrix/templates/s2018/css/bootstrap-theme.css" type="text/css" data-template-style="true" rel="stylesheet" />
+        <link href="bitrix/templates/s2018/css/bootstrap-select.css" type="text/css" data-template-style="true" rel="stylesheet" />
+        <link href="bitrix/templates/s2018/css/owl.carousel.css" type="text/css" data-template-style="true" rel="stylesheet" />
+        <link href="bitrix/templates/s2018/css/owl.theme.default.css" type="text/css" data-template-style="true" rel="stylesheet" />
+        <link href="bitrix/templates/s2018/css/submenu.css" type="text/css" data-template-style="true" rel="stylesheet" />
+        <link href="bitrix/templates/s2018/css/jquery-ui.css" type="text/css" data-template-style="true" rel="stylesheet" />
+        <link href="bitrix/templates/s2018/css/jquery-ui.theme.css" type="text/css" data-template-style="true" rel="stylesheet" />
+        <link href="bitrix/templates/s2018/css/font-awesome/css/font-awesome.min.css" type="text/css" data-template-style="true" rel="stylesheet" />
+        <link href="bitrix/templates/s2018/css/build.css" type="text/css" data-template-style="true" rel="stylesheet" />
+        <link href="bitrix/templates/s2018/css/jquery.countdown.css" type="text/css" data-template-style="true" rel="stylesheet" />
+        <link href="css/icons.css" type="text/css" data-template-style="true" rel="stylesheet" />
+        <link href="bitrix/templates/s2018/css/jquery.fancybox.css" type="text/css" data-template-style="true" rel="stylesheet" />
+        <link href="css/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
+
+
+
+
+
+
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            var SHOW_GEO_WINDOW = false;
+        </script>
+
+
+
+        <script type="text/javascript" src="bitrix/templates/s2018/js/jquery.plugin.js"></script>
+        <script type="text/javascript" src="bitrix/templates/s2018/js/jquery.countdown.js"></script>
+        <script type="text/javascript" src="bitrix/templates/s2018/js/jquery.countdown-ru.js"></script>
+        <script type="text/javascript" src="bitrix/templates/s2018/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="bitrix/templates/s2018/js/bootstrap.js"></script>
+        <script type="text/javascript" src="bitrix/templates/s2018/js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="bitrix/templates/s2018/js/bootstrap-select.js"></script>
+        <script type="text/javascript" src="bitrix/templates/s2018/js/jquery.maskedinput.min.js"></script>
+        <script type="text/javascript" src="bitrix/templates/s2018/js/jquery.fancybox.min.js"></script>       
+        <script type="text/javascript" src="bitrix/templates/s2018/js/spinner.js"></script>
+        <script type="text/javascript" src="bitrix/templates/s2018/js/enscroll-0.6.2.min.js"></script>
+        <script type="text/javascript" src="bitrix/templates/s2018/js/custom.js"></script>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+              <![endif]-->
+        <script type="application/ld+json">
+            {
+            "@context": "http://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+            "@id": "/montazh/",
+            "name": "Монтаж"
+            }
+            }]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+            "@context": "http://schema.org",
+            "@type": "Store",
+            "@id": "http://santech-control.ru",
+            "name": "Интернет-магазин ",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "наб. реки Екатерингофки дом. 29, корпус 31, литер Т, офис № 307",
+            "addressLocality": "Санкт-Петербург",
+            "postalCode": "193318",
+            "addressCountry": "RU"
+            },
+            "url": "http://santech-control.ru",
+            "email": "info@santech-control.ru",
+            "telephone": "8(812)649-05-19"
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="panel"></div>
+        <header class="line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col1">
+                        <div class="geo-wrap">
+                            <a href="#" class="clearfix">
+                                <i class="icon geo pull-left"></i>
+                                <span class="text pull-left js-link">Москва</span>
+                            </a>
+                            <div class="modal fade my_modal" id="choiceCityFirst" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-sm" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body text-center">
+                                            <p class="fz16">Ваш город <b>Москва</b>?</p>
+                                            <div class="row-small-padding-wrap">
+                                                <div class="row row-small-padding">
+                                                    <div class="col-xs-3">
+                                                        <button id="confirmCurrentCity" class="btn btn-primary btn-block" data-code="default">Да</button>
+                                                    </div>
+                                                    <div class="col-xs-9">
+                                                        <button class="btn btn-default btn-block">Выбрать другой город</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="fz13">От местоположения зависит стоимость, наличие и доставка</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade my_modal" id="choiceCityFirst" tabindex="-1" role="dialog">
+                                <select name="city_select" id="footer_city_select" class="selectpicker">
+                                    <option data-value="default" value="http://santech-control.ru/montazh/">Москва</option>
+                                    <option data-value="spb" value="http://spb.santech-control.ru/montazh/">Санкт-Петербург</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col2">
+                        <div class="clearfix ">
+                            <i class="icon time pull-left"></i>
+                            <span class="pull-left">Пн.—Пт.: 10.00—19.00</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col3">
+                        <a href="mailto:info@santeсh-control.ru" class="clearfix">
+                            <i class="icon email pull-left"></i>
+                            <span class="text pull-left">info@santeсh-control.ru</span>
+                        </a>
+
+                    </div>
+                    <div class="col-md-3 col4">
+                        <div class="clearfix">
+                            <div class="phones">
+                                <a class="pull-right phone" href="tel:"></a>
+                                <a class="pull-right phone" href="tel:8 499 110 66 52">
+
+                                    <span class="phone-1">8 499 110 66 52</span></a>
+                            </div>
+                            <div class="icon phone pull-right"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col1">
+                        <a href="/" class="logo">
+                            <img src="bitrix/templates/s2018/images/logo.png" class="img-responsive" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-md-8 col2">
+                        <form action="/search/" method="get">
+                            <div class="form-group form-group-search">
+                                <input type="text" name="q" class="form-control search input" id="head_search" autocomplete="off" placeholder="Поиск по сайту">
+                                <button type="submit" class="submit_button btn btn-default">Найти</button>
+                                <div class="search_result_wrap" id="header_search_result"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-2 col3">
+                        <div class="btn-collMeWrap">
+                            <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#feedBack" onclick="yaCounter35832060.reachGoal('clickoncallback'); return true;">Заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row menu-items">
+                    <div class="col-md-2 col1 no-padding-right-md hidden-xs hidden-sm">
+                        <span href="" role="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="menu-item catalog-menu-item clearfix">
+                            <i class="icon catalog "></i>
+                            каталог товаров
+                            <i class="icon down "></i>
+                        </span>
+                    </div>
+                    <div class="col-md-8 col2 no-padding-md">
+                        <ul class="list-unstyled site-menu-imtems">
+                            <li><a href="/#about_us" class="menu-item">о нас</a></li>
+                            <li><a href="/oplata/#oplata" class="menu-item">оплата</a></li>
+                            <li><a href="/dostavka/#dostavka" class="menu-item">доставка</a></li>
+                            <li><a href="/montazh/" class="menu-item">установка</a></li>
+                            <li><a href="/rekvizity.php" class="menu-item">контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1 col-xs-6 col3 no-padding-md no-padding-right-sm no-padding-right-xs">
+                        <div class="user-line-wrap">
+                            <a class="menu-item special-menu-item" href="#" data-toggle="modal" data-target="#authfrom">
+                                <i class="icon personal"></i>
+                                Кабинет
+                                <span class="small">Войти на сайт</span>
+                            </a>
+                            <div class="modal fade my_modal" id="authfrom" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-sm modal-user-auth-sm" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body text-center">
+                                            <div id="authfromStart">
+                                                Чтобы войти, достаточно<br />ввести Ваш номер
+                                                <form action="" method="POST">
+                                                    <div class="row row-small-padding auth-input-wrap">
+                                                        <div class="col-xs-1">+7</div>
+                                                        <div class="col-xs-7">
+                                                            <div class="form-group">
+                                                                <input id="authPhone" class="form-control authPhone" type="text" placeholder="(___)-___-__-__" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-4">
+                                                            <button class="btn btn-primary btn-block" type="submit">Войти</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+
+                                                <div class="shield-wrap clearfix"><i class="icon shield pull-left"></i><span>У нас Ваш номер в безопасности</span></div>
+                                            </div>
+                                            <div id="authfromLogin" class="hide">
+                                                <div class="title">Вход в личный кабинет</div>
+                                                <form action="" method="POST">
+                                                    <div class="row row-small-padding auth-input-wrap">
+                                                        <div class="col-xs-4">Телефон:</div>
+                                                        <div class="col-xs-1"><span class="num7">+7</span></div>
+                                                        <div class="col-xs-7">
+                                                            <div class="form-group">
+                                                                <input id="authPhoneLogin" class="form-control authPhone" type="text" placeholder="(___)-___-__-__" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shield-wrap clearfix"><i class="icon shield pull-left"></i><span>У нас Ваш номер в безопасности</span></div>
+                                                    <div class="form-fields">
+                                                        <div class="form-group">
+                                                            <input id="authPassword" class="form-control" type="password" name="password" maxlength="255" autocomplete="off" placeholder="Пароль" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="send-sms-wrap"><a href="" id="sendSmsPass">Выслать SMS и E-mail с новым паролем</a></div>
+                                                    <div id="login-error"></div>
+                                                    <button class="btn btn-primary btn-block" type="submit">Войти</button>
+                                                </form>
+                                            </div>
+                                            <div id="authfromReg" class="hide">
+                                                <div class="title">Регистрация</div>
+                                                <form action="" method="POST">
+                                                    <div class="row row-small-padding auth-input-wrap">
+                                                        <div class="col-xs-4">Телефон:</div>
+                                                        <div class="col-xs-1"><span class="num7">+7</span></div>
+                                                        <div class="col-xs-7">
+                                                            <div class="form-group">
+                                                                <input id="authPhoneReg" class="form-control authPhone req" type="text" placeholder="(___)-___-__-__" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="shield-wrap clearfix"><i class="icon shield pull-left"></i><span>У нас Ваш номер в безопасности</span></div>
+                                                    <div class="form-fields">
+                                                        <div class="form-group before-send-code">
+                                                            <input id="regName" class="form-control req" type="text" name="name" placeholder="Имя" />
+                                                        </div>
+                                                        <div class="form-group before-send-code">
+                                                            <input class="form-control req" type="text" name="lname" placeholder="Фамилия" />
+                                                        </div>
+                                                        <div class="form-group before-send-code">
+                                                            <input class="form-control req" type="email" name="email" placeholder="Эл.почта (будет отправлен код)" />
+                                                        </div>
+                                                        <div class="form-group before-send-code text-left">
+                                                            <div class="checkbox">
+                                                                <input class="req" name="confirm" type="checkbox" id="reg_confirm" /> <label for="reg_confirm">Я соглашаюсь с условиями <br /> <a href="">пользовательского соглашения</a></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="reg-error"></div>
+                                                    <button class="btn btn-primary btn-block" type="submit">Регистрация</button>
+                                                </form>
+                                            </div>
+                                            <div id="authfromRegCode" class="hide">
+                                                <form action="" method="POST">
+                                                    <div class="form-fields">
+                                                        <p class="text-left"><a href="" id="backToReg"><i class="glyphicon glyphicon-menu-left"></i> Назад</a></p>
+                                                        <p class="" id="text_for_code"></p>
+                                                        <div class="form-group">
+                                                            <input class="form-control req" id="regCode" type="text" name="code" placeholder="введите полученный код" maxlength="18" />
+                                                        </div>
+                                                        <div id="code-error"></div>
+                                                        <button class="btn btn-primary btn-block" type="submit">Регистрация</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-1 col-xs-6 col4 no-padding-left-md no-padding-left-sm no-padding-left-xs">
+
+
+
+                        <div class="cart-block">
+                            <a class="menu-item special-menu-item special-menu-item-cart" href="#" data-toggle="modal" data-target="#fastCart">
+                                <i class="icon cart"></i>
+                                Корзина
+                                <span class="small">Пока пуста</span>
+                                <span class="value">0</span>
+                                <script type="text/javascript">
+                                    $(function () {
+                                        var IDS = [];
+                                        var items = {"total": "0"};
+
+                                        setInCartButtons(IDS);
+                                        setInCartItems(items);
+                                    });
+                                </script>
+                            </a>
+                            <div class="fast-cart-wrap">
+                                <div class="fast-cart modal fade my_modal" id="fastCart" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog modal-sm modal-fast-cart-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="text-center">Корзина пуста</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container main-container">
+            <div class="row menu-items-sub">
+                <div class="col-md-2 col1 no-padding-right-md">
+                    <div class="menu-down-wrap">
+                        <nav class="navbar navbar-default catalog-navbar">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <div class="icon catalog pull-left"></div>
+                                    <a href="" class="navbar-brand visible-xs">Каталог товаров</a>
+                                </div>
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="li_count_ dropdown" data-id="16">
+                                            <a class="visible-md visible-lg" href="/catalog/vanny/">Ванны <span class="cnt">(987)</span></a>
+                                            <a class="hidden-md hidden-lg" href="/catalog/vanny/" title="Ванны" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ванны <span class="cnt">(987)</span><span class="icon arrow-down"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="/catalog/vanny/filter/material-is-chugunnye/apply/">Чугунные</a></li>
+                                                <li><a href="/catalog/vanny/filter/material-is-akrilovye/apply/">Акриловые</a></li>
+                                                <li><a href="/catalog/vanny/filter/material-is-iz_litevogo_mramora/apply/">Из камня</a></li>
+                                                <li><a href="/catalog/vanny/filter/form-is-pryamougolnaya/apply/">Прямоугольные</a></li>
+                                                <li><a href="/catalog/vanny/filter/form-is-asimmetrichnaya/apply/">Асимметричные</a></li>
+                                                <li><a href="/catalog/vanny/filter/otdelnostoyashchaya-is-y/apply/">Отдельностоящие</a></li>
+                                                <li><a href="/catalog/vanny/filter/hydromassage_system-is-est-uzhe-ustanovlena/apply/">Гидромассажные</a></li>
+                                                <li><a href="/catalog/vanny/filter/form-is-asimmetrichnaya-or-pyatiugolnaya-or-chetvert-kruga-or-shestiugolnaya/apply/">Угловые</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="li_count_ dropdown" data-id="85">
+                                            <a class="visible-md visible-lg" href="/catalog/dushevye_kabiny/">Душевые кабины <span class="cnt">(726)</span></a>
+                                            <a class="hidden-md hidden-lg" href="/catalog/dushevye_kabiny/" title="Душевые кабины" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Душевые кабины <span class="cnt">(726)</span><span class="icon arrow-down"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="/catalog/dushevye_kabiny/filter/category_pallet-is-glubokiy/apply/">С высоким поддоном</a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/category_pallet-is-nizkiy/apply/">С низким поддоном</a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/form-is-chetvert-kruga/apply/">Четверть круга</a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/form-is-chetvert-kruga-or-asimmetrichnaya/apply/">Угловые</a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/form-is-kvadratnaya/apply/">Квадратные</a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/jacuzzi-is-y/apply/">С гидромассажем</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="li_count_ dropdown" data-id="86">
+                                            <a class="visible-md visible-lg" href="/catalog/dushevye_ograzhdeniya/">Душевые ограждения <span class="cnt">(1973)</span></a>
+                                            <a class="hidden-md hidden-lg" href="/catalog/dushevye_ograzhdeniya/" title="Душевые ограждения" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Душевые ограждения <span class="cnt">(1973)</span><span class="icon arrow-down"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="/catalog/dushevye_ograzhdeniya/filter/type-is-dushevoy-ugolok/apply/">Уголки</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="li_count_" data-id="762"><a href="/catalog/dushevye_poddony/" title="Душевые поддоны">Душевые поддоны <span class="cnt">(35)</span></a></li>
+
+                                        <li class="li_count_ dropdown" data-id="19">
+                                            <a class="visible-md visible-lg" href="/catalog/vodonagrevateli/">Водонагреватели <span class="cnt">(739)</span></a>
+                                            <a class="hidden-md hidden-lg" href="/catalog/vodonagrevateli/" title="Водонагреватели" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Водонагреватели <span class="cnt">(739)</span><span class="icon arrow-down"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="/catalog/vodonagrevateli/filter/type-is-nakopitelnye/apply/">Накопительные</a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/type-is-nakopitelnye/apply/">Проточные</a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/tank-is-nerzh-stal/apply/">Из нержавеющей стали</a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/type_heat-is-kosvennyy/apply/">Косвенные</a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/type_heat-is-elektricheskiy/apply/">Электрические</a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/type_heat-is-kombinirovannyy/apply/">Комбинированные</a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/type_heat-is-gazovyy/apply/">Газовые</a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/installation-is-nastennyy-or-napolnyy-nastennyy-or-universalnyy/apply/">Настенные</a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/installation-is-napolnyy-or-napolnyy-nastennyy-or-universalnyy/apply/">Напольные</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="li_count_" data-id="20"><a href="/catalog/sauny/" title="Сауны">Сауны <span class="cnt">(33)</span></a></li>
+
+                                        <li class="li_count_ dropdown" data-id="89">
+                                            <a class="visible-md visible-lg" href="/catalog/rakoviny/">Раковины <span class="cnt">(1852)</span></a>
+                                            <a class="hidden-md hidden-lg" href="/catalog/rakoviny/" title="Раковины" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Раковины <span class="cnt">(1852)</span><span class="icon arrow-down"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="/catalog/rakoviny/filter/form-is-ovalnaya/apply/">Овальные</a></li>
+                                                <li><a href="/catalog/rakoviny/filter/form-is-pryamougolnaya/apply/">Прямоугольные</a></li>
+                                                <li><a href="/catalog/rakoviny/filter/form-is-kruglaya/apply/">Круглые</a></li>
+                                                <li><a href="/catalog/rakoviny/filter/form-is-polukruglaya/apply/">Полукруглые</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="li_count_" data-id="88"><a href="/catalog/unitazy/" title="Унитазы">Унитазы <span class="cnt">(1172)</span></a></li>
+
+                                        <li class="li_count_" data-id="91"><a href="/catalog/bide/" title="Биде">Биде <span class="cnt">(519)</span></a></li>
+
+                                        <li class="li_count_" data-id="100"><a href="/catalog/pissuary/" title="Писсуары">Писсуары <span class="cnt">(61)</span></a></li>
+
+                                        <li class="li_count_" data-id="90"><a href="/catalog/installyatsii/" title="Инсталляции">Инсталляции <span class="cnt">(517)</span></a></li>
+
+                                        <li class="li_count_" data-id="25"><a href="/catalog/komplektuyushchie/" title="Комплектующие">Комплектующие <span class="cnt">(1436)</span></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-10 col2 no-padding-left-md">
+                    <div class="sub-catalog visible-lg visible-md">
+
+                        <ul class="list-unstyled">
+                            <li class="" id="sub_16">
+                                <div class="colum-items">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="/catalog/vanny/filter/material-is-chugunnye/apply/" class="title">Чугунные</a>
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/vanny/filter/material-is-chugunnye/length-from-150-to-150/width-from-70-to-70/apply/">150х70 см <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/material-is-chugunnye/length-from-160-to-160/width-from-70-to-70/apply/">160х70 см <span class="count">(5)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/material-is-chugunnye/length-from-170-to-170/width-from-70-to-70/apply/">170х70 см <span class="count">(4)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/material-is-chugunnye/length-from-180-to-180/width-from-80-to-80/apply/">180х80 см <span class="count">(3)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="/catalog/vanny/filter/material-is-akrilovye/apply/" class="title">Акриловые</a>
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/vanny/filter/material-is-akrilovye/length-from-150-to-150/apply/">Длина 150 см <span class="count">(127)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/material-is-akrilovye/length-from-160-to-160/apply/">Длина 160 см <span class="count">(123)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/material-is-akrilovye/length-from-165-to-165/apply/">Длина 165 см <span class="count">(12)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/material-is-akrilovye/length-from-170-to-170/apply/">Длина 170 см <span class="count">(212)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/material-is-akrilovye/length-from-180-to-180/apply/">Длина 180 см <span class="count">(113)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="/catalog/vanny/filter/material-is-iz_litevogo_mramora/apply/" class="title">Из камня</a>
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/vanny/filter/material-is-iz_litevogo_mramora/length-from-150-to-150/apply/">Длина 150 см <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/material-is-iz_litevogo_mramora/length-from-160-to-160/apply/">Длина 160 см <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/material-is-iz_litevogo_mramora/length-from-170-to-170/apply/">Длина 170 см <span class="count">(5)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/material-is-iz_litevogo_mramora/length-from-180-to-180/apply/">Длина 180 см <span class="count">(2)</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row row-next">
+                                        <div class="col-md-4">
+                                            <a href="/catalog/vanny/filter/form-is-pryamougolnaya/apply/" class="title">Прямоугольные</a>
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/vanny/filter/form-is-pryamougolnaya/length-from-150-to-150/apply/">150 см <span class="count">(52)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/form-is-pryamougolnaya/length-from-160-to-160/apply/">160 см <span class="count">(50)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/form-is-pryamougolnaya/length-from-170-to-170/apply/">170 см <span class="count">(140)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/form-is-pryamougolnaya/length-from-180-to-180/apply/">180 см <span class="count">(107)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="/catalog/vanny/filter/form-is-asimmetrichnaya/apply/" class="title">Асимметричные</a>
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/vanny/filter/form-is-asimmetrichnaya/length-from-140-to-140/apply/">140 см <span class="count">(14)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/form-is-asimmetrichnaya/length-from-150-to-150/apply/">150 см <span class="count">(53)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/form-is-asimmetrichnaya/length-from-160-to-160/apply/">160 см <span class="count">(70)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/form-is-asimmetrichnaya/length-from-170-to-170/apply/">170 см <span class="count">(84)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="/catalog/vanny/filter/otdelnostoyashchaya-is-y/apply/" class="title">Отдельностоящие</a>
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/vanny/filter/otdelnostoyashchaya-is-y/length-from-150-to-150/apply/">150 см <span class="count">(0)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/otdelnostoyashchaya-is-y/length-from-160-to-160/apply/">160 см <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/otdelnostoyashchaya-is-y/length-from-170-to-170/apply/">170 см <span class="count">(11)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/otdelnostoyashchaya-is-y/length-from-180-to-180/apply/">180 см <span class="count">(0)</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row row-next">
+                                        <div class="col-md-4"><a class="title" href="/catalog/vanny/filter/hydromassage_system-is-est-uzhe-ustanovlena/apply/">Гидромассажные</a></div>
+                                        <div class="col-md-4">
+                                            <a href="/catalog/vanny/filter/form-is-asimmetrichnaya-or-pyatiugolnaya-or-chetvert-kruga-or-shestiugolnaya/apply/" class="title">Угловые</a>
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/vanny/filter/form-is-asimmetrichnaya-or-pyatiugolnaya-or-chetvert-kruga-or-shestiugolnaya/length-from-120-to-120/apply/">120 см <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/form-is-asimmetrichnaya-or-pyatiugolnaya-or-chetvert-kruga-or-shestiugolnaya/length-from-130-to-130/apply/">130 см <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/form-is-asimmetrichnaya-or-pyatiugolnaya-or-chetvert-kruga-or-shestiugolnaya/length-from-140-to-140/apply/">140 см <span class="count">(29)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/form-is-asimmetrichnaya-or-pyatiugolnaya-or-chetvert-kruga-or-shestiugolnaya/length-from-150-to-150/apply/">150 см <span class="count">(84)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/form-is-asimmetrichnaya-or-pyatiugolnaya-or-chetvert-kruga-or-shestiugolnaya/length-from-160-to-160/apply/">160 см <span class="count">(81)</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="colum-brands">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-1marka/apply/">1MarKa <span class="count">(59)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-alpen/apply/">Alpen <span class="count">(182)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-am-pm/apply/">Am.Pm <span class="count">(37)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-aqualux/apply/">Aqualux <span class="count">(8)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-aquanet/apply/">Aquanet <span class="count">(53)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-bas/apply/">Bas <span class="count">(42)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-castalia/apply/">Castalia <span class="count">(6)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-devon-devon/apply/">Devon&Devon <span class="count">(2)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-duravit/apply/">Duravit <span class="count">(9)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-esse/apply/">ESSE <span class="count">(25)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-excellent/apply/">Excellent <span class="count">(67)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-frank/apply/">Frank <span class="count">(10)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-gemy/apply/">Gemy <span class="count">(125)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-jacob-delafon/apply/">Jacob Delafon <span class="count">(21)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-djacuzzi/apply/">Jacuzzi <span class="count">(22)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-orans/apply/">Orans <span class="count">(4)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-ravak/apply/">Ravak <span class="count">(87)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-riho/apply/">Riho <span class="count">(86)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-roca/apply/">Roca <span class="count">(20)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-romance-collection/apply/">Romance Collection <span class="count">(12)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-santek/apply/">Santek <span class="count">(15)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-vidima/apply/">Vidima <span class="count">(14)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-villeroy-boch/apply/">Villeroy & Boch <span class="count">(27)</span></a></li>
+                                                <li><a href="/catalog/vanny/filter/manufacturer-is-akvatek/apply/">Акватек <span class="count">(54)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="" id="sub_85">
+                                <div class="colum-items">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="/catalog/dushevye_kabiny/filter/category_pallet-is-glubokiy/apply/" class="title">С высоким поддоном</a>
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/dushevye_kabiny/filter/width-from-80-to-80/depth-from-80-to-80/category_pallet-is-glubokiy/apply/">80х80 <span class="count">(14)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/width-from-90-to-90/depth-from-90-to-90/category_pallet-is-glubokiy/apply/">90х90 <span class="count">(69)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/width-from-100-to-100/depth-from-100-to-100/category_pallet-is-glubokiy/apply/">100х100 <span class="count">(34)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/width-from-120-to-120/depth-from-80-to-80/category_pallet-is-glubokiy/apply/">120х80 <span class="count">(45)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="/catalog/dushevye_kabiny/filter/category_pallet-is-nizkiy/apply/" class="title">С низким поддоном</a>
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/dushevye_kabiny/filter/width-from-80-to-80/depth-from-80-to-80/category_pallet-is-nizkiy/apply/">80х80 <span class="count">(21)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/width-from-90-to-90/depth-from-90-to-90/category_pallet-is-nizkiy/apply/">90х90 <span class="count">(88)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/width-from-100-to-100/depth-from-100-to-100/category_pallet-is-nizkiy/apply/">100х100 <span class="count">(52)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/width-from-120-to-120/depth-from-80-to-80/category_pallet-is-nizkiy/apply/">120х80 <span class="count">(36)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="/catalog/dushevye_kabiny/filter/form-is-chetvert-kruga/apply/" class="title">Четверть круга</a>
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/dushevye_kabiny/filter/width-from-80-to-80/depth-from-80-to-80/apply/">80х80 <span class="count">(40)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/width-from-90-to-90/depth-from-90-to-90/apply/">90х90 <span class="count">(162)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/width-from-100-to-100/depth-from-100-to-100/apply/">100х100 <span class="count">(91)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/width-from-110-to-110/depth-from-110-to-110/apply/">110х110 <span class="count">(13)</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row row-next">
+                                        <div class="col-md-4"><a class="title" href="/catalog/dushevye_kabiny/filter/form-is-chetvert-kruga-or-asimmetrichnaya/apply/">Угловые</a></div>
+                                        <div class="col-md-4"><a class="title" href="/catalog/dushevye_kabiny/filter/form-is-kvadratnaya/apply/">Квадратные</a></div>
+                                        <div class="col-md-4"><a class="title" href="/catalog/dushevye_kabiny/filter/jacuzzi-is-y/apply/">С гидромассажем</a></div>
+                                    </div>
+                                    <div class="row row-next">
+                                    </div>
+                                </div>
+                                <div class="colum-brands">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-am-pm/apply/">Am.Pm <span class="count">(11)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-appollo/apply/">Appollo <span class="count">(58)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-aqualux/apply/">Aqualux <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-aquanet/apply/">Aquanet <span class="count">(43)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-arcus/apply/">Arcus <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-eago/apply/">Eago <span class="count">(40)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-edelform/apply/">Edelform <span class="count">(19)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-erlit/apply/">Erlit <span class="count">(96)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-esbano/apply/">Esbano <span class="count">(24)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-fresh/apply/">Fresh <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-grossman/apply/">GROSSMAN <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-jacuzzi/apply/">Jacuzzi <span class="count">(5)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-koy/apply/">KOY <span class="count">(9)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-luxus/apply/">Luxus <span class="count">(18)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-massimo/apply/">Massimo <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-nautico/apply/">Nautico <span class="count">(33)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-niagara/apply/">Niagara <span class="count">(122)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-oporto-shower/apply/">Oporto Shower <span class="count">(60)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-parly/apply/">Parly <span class="count">(49)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-polar/apply/">Polar <span class="count">(21)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-river/apply/">River <span class="count">(10)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-sanway/apply/">Sanway <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-sturm/apply/">Sturm <span class="count">(13)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-teuco/apply/">Teuco <span class="count">(9)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-timo/apply/">Timo <span class="count">(63)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-triton/apply/">Triton <span class="count">(6)</span></a></li>
+                                                <li><a href="/catalog/dushevye_kabiny/filter/manufacturer-is-radomir/apply/">Радомир <span class="count">(4)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="" id="sub_86">
+                                <div class="colum-items">
+                                    <div class="row">
+                                        <div class="col-md-4"><a class="title" href="/catalog/dushevye_ograzhdeniya/filter/type-is-dushevoy-ugolok/apply/">Уголки</a></div>
+                                    </div>
+                                </div>
+                                <div class="colum-brands">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/dushevye_ograzhdeniya/filter/manufacturer-is-am-pm/apply/">Am.Pm <span class="count">(13)</span></a></li>
+                                                <li><a href="/catalog/dushevye_ograzhdeniya/filter/manufacturer-is-aquanet/apply/">Aquanet <span class="count">(55)</span></a></li>
+                                                <li><a href="/catalog/dushevye_ograzhdeniya/filter/manufacturer-is-cezares/apply/">Cezares <span class="count">(616)</span></a></li>
+                                                <li><a href="/catalog/dushevye_ograzhdeniya/filter/manufacturer-is-gemy/apply/">Gemy <span class="count">(72)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/dushevye_ograzhdeniya/filter/manufacturer-is-huppe/apply/">Huppe <span class="count">(59)</span></a></li>
+                                                <li><a href="/catalog/dushevye_ograzhdeniya/filter/manufacturer-is-luxus/apply/">Luxus <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/dushevye_ograzhdeniya/filter/manufacturer-is-niagara/apply/">Niagara <span class="count">(4)</span></a></li>
+                                                <li><a href="/catalog/dushevye_ograzhdeniya/filter/manufacturer-is-parly/apply/">Parly <span class="count">(6)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/dushevye_ograzhdeniya/filter/manufacturer-is-radaway/apply/">Radaway <span class="count">(714)</span></a></li>
+                                                <li><a href="/catalog/dushevye_ograzhdeniya/filter/manufacturer-is-ravak/apply/">Ravak <span class="count">(17)</span></a></li>
+                                                <li><a href="/catalog/dushevye_ograzhdeniya/filter/manufacturer-is-rgw/apply/">RGW <span class="count">(85)</span></a></li>
+                                                <li><a href="/catalog/dushevye_ograzhdeniya/filter/manufacturer-is-riho/apply/">Riho <span class="count">(330)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="" id="sub_762">
+                                <div class="colum-brands">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/dushevye_poddony/filter/manufacturer-is-cezares/apply/">Cezares <span class="count">(35)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="" id="sub_19">
+                                <div class="colum-items">
+                                    <div class="row">
+                                        <div class="col-md-4"><a class="title" href="/catalog/vodonagrevateli/filter/type-is-nakopitelnye/apply/">Накопительные</a></div>
+                                        <div class="col-md-4"><a class="title" href="/catalog/vodonagrevateli/filter/type-is-nakopitelnye/apply/">Проточные</a></div>
+                                        <div class="col-md-4"><a class="title" href="/catalog/vodonagrevateli/filter/tank-is-nerzh-stal/apply/">Из нержавеющей стали</a></div>
+                                    </div>
+                                    <div class="row row-next">
+                                        <div class="col-md-4"><a class="title" href="/catalog/vodonagrevateli/filter/type_heat-is-kosvennyy/apply/">Косвенные</a></div>
+                                        <div class="col-md-4"><a class="title" href="/catalog/vodonagrevateli/filter/type_heat-is-elektricheskiy/apply/">Электрические</a></div>
+                                        <div class="col-md-4"><a class="title" href="/catalog/vodonagrevateli/filter/type_heat-is-kombinirovannyy/apply/">Комбинированные</a></div>
+                                    </div>
+                                    <div class="row row-next">
+                                        <div class="col-md-4"><a class="title" href="/catalog/vodonagrevateli/filter/type_heat-is-gazovyy/apply/">Газовые</a></div>
+                                        <div class="col-md-4"><a class="title" href="/catalog/vodonagrevateli/filter/installation-is-nastennyy-or-napolnyy-nastennyy-or-universalnyy/apply/">Настенные</a></div>
+                                        <div class="col-md-4"><a class="title" href="/catalog/vodonagrevateli/filter/installation-is-napolnyy-or-napolnyy-nastennyy-or-universalnyy/apply/">Напольные</a></div>
+                                    </div>
+                                    <div class="row row-next">
+                                    </div>
+                                </div>
+                                <div class="colum-brands">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-aeg/apply/">AEG <span class="count">(53)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-ariston/apply/">Ariston <span class="count">(62)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-austria-email/apply/">Austria Email <span class="count">(23)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-ballu/apply/">Ballu <span class="count">(24)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-baxi/apply/">Baxi <span class="count">(21)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-bosch/apply/">Bosch <span class="count">(23)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-buderus/apply/">Buderus <span class="count">(19)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-de-dietrich/apply/">De Dietrich <span class="count">(18)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-drazice/apply/">Drazice <span class="count">(62)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-electrolux/apply/">Electrolux <span class="count">(66)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-gorenje/apply/">Gorenje <span class="count">(83)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-hajdu/apply/">Hajdu <span class="count">(27)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-oso/apply/">OSO <span class="count">(64)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-protherm/apply/">Protherm <span class="count">(8)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-stiebel-eltron/apply/">Stiebel Eltron <span class="count">(102)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-thermex/apply/">Thermex <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-vaillant/apply/">Vaillant <span class="count">(22)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-viessmann/apply/">Viessmann <span class="count">(35)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-zanussi/apply/">Zanussi <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/vodonagrevateli/filter/manufacturer-is-evan/apply/">Эван <span class="count">(25)</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="" id="sub_20">
+                                <div class="colum-brands">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/sauny/filter/manufacturer-is-appollo/apply/">Appollo <span class="count">(1)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/sauny/filter/manufacturer-is-frank/apply/">Frank <span class="count">(12)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/sauny/filter/manufacturer-is-koy/apply/">KOY <span class="count">(20)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="" id="sub_89">
+                                <div class="colum-items">
+                                    <div class="row">
+                                        <div class="col-md-4"><a class="title" href="/catalog/rakoviny/filter/form-is-ovalnaya/apply/">Овальные</a></div>
+                                        <div class="col-md-4"><a class="title" href="/catalog/rakoviny/filter/form-is-pryamougolnaya/apply/">Прямоугольные</a></div>
+                                        <div class="col-md-4"><a class="title" href="/catalog/rakoviny/filter/form-is-kruglaya/apply/">Круглые</a></div>
+                                    </div>
+                                    <div class="row row-next">
+                                        <div class="col-md-4"><a class="title" href="/catalog/rakoviny/filter/form-is-polukruglaya/apply/">Полукруглые</a></div>
+                                    </div>
+                                </div>
+                                <div class="colum-brands">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-1marka/apply/">1MarKa <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-althea-ceramica/apply/">Althea ceramica <span class="count">(9)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-am-pm/apply/">Am.Pm <span class="count">(15)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-aquanet/apply/">Aquanet <span class="count">(5)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-arcus/apply/">Arcus <span class="count">(18)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-artceram/apply/">ArtCeram <span class="count">(37)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-azzurra/apply/">Azzurra <span class="count">(28)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-belbagno/apply/">BelBagno <span class="count">(11)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-belux/apply/">Belux <span class="count">(26)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-caprigo/apply/">Caprigo <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-catalano/apply/">Catalano <span class="count">(84)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-cersanit/apply/">Cersanit <span class="count">(30)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-cezares/apply/">Cezares <span class="count">(9)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-colombo/apply/">Colombo <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-della/apply/">Della <span class="count">(6)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-devon-devon/apply/">Devon&Devon <span class="count">(7)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-disegno-ceramica/apply/">Disegno Ceramica <span class="count">(45)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-duravit/apply/">Duravit <span class="count">(47)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-gala/apply/">Gala <span class="count">(19)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-galassia/apply/">Galassia <span class="count">(29)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-globo/apply/">Globo <span class="count">(23)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-gsi/apply/">GSI <span class="count">(15)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-gustavsberg/apply/">Gustavsberg <span class="count">(23)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-hatria/apply/">Hatria <span class="count">(93)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-hidra-ceramica/apply/">Hidra Ceramica <span class="count">(56)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-ideal-standard/apply/">Ideal Standard <span class="count">(81)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-ido/apply/">IDO <span class="count">(21)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-ifo/apply/">IFO <span class="count">(38)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-jacob-delafon/apply/">Jacob Delafon <span class="count">(119)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-jika/apply/">Jika <span class="count">(26)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-kerasan/apply/">Kerasan <span class="count">(45)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-keuco/apply/">Keuco <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-laufen/apply/">Laufen <span class="count">(77)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-migliore/apply/">Migliore <span class="count">(19)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-misty/apply/">Misty <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-noken/apply/">Noken <span class="count">(14)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-olympia/apply/">Olympia <span class="count">(94)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-ravak/apply/">Ravak <span class="count">(35)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-recor/apply/">Recor <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-roca/apply/">Roca <span class="count">(98)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-rosa/apply/">Rosa <span class="count">(26)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-sanela/apply/">Sanela <span class="count">(3)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-sanita/apply/">Sanita <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-sanita-luxe/apply/">Sanita luxe <span class="count">(9)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-santek/apply/">Santek <span class="count">(24)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-santeri/apply/">Santeri <span class="count">(10)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-senda/apply/">Senda <span class="count">(168)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-serel/apply/">Serel <span class="count">(48)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-simas/apply/">Simas <span class="count">(45)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-smartsant/apply/">SMARTsant <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-tehnolit/apply/">Tehnolit <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-teka/apply/">Teka <span class="count">(6)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-toto/apply/">Toto <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-vidima/apply/">Vidima <span class="count">(16)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-villeroy-boch/apply/">Villeroy & Boch <span class="count">(69)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-vitra/apply/">VitrA <span class="count">(74)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-vitruvit/apply/">Vitruvit <span class="count">(15)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-white-stone/apply/">White Stone <span class="count">(14)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-zero/apply/">Zero <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-akvaton/apply/">Акватон <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-oskolskaya-keramika/apply/">Оскольская керамика <span class="count">(7)</span></a></li>
+                                                <li><a href="/catalog/rakoviny/filter/manufacturer-is-fema/apply/">Фэма <span class="count">(1)</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="" id="sub_88">
+                                <div class="colum-brands">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-alcaplast/apply/">AlcaPlast <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-althea-ceramica/apply/">Althea ceramica <span class="count">(10)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-am-pm/apply/">Am.Pm <span class="count">(19)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-arcus/apply/">Arcus <span class="count">(19)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-artceram/apply/">ArtCeram <span class="count">(26)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-axa/apply/">Axa <span class="count">(9)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-azzurra/apply/">Azzurra <span class="count">(14)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-belbagno/apply/">BelBagno <span class="count">(22)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-caprigo/apply/">Caprigo <span class="count">(6)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-catalano/apply/">Catalano <span class="count">(25)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-cersanit/apply/">Cersanit <span class="count">(31)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-cezares/apply/">Cezares <span class="count">(6)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-della/apply/">Della <span class="count">(35)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-devon-devon/apply/">Devon&Devon <span class="count">(12)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-disegno-ceramica/apply/">Disegno Ceramica <span class="count">(7)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-duravit/apply/">Duravit <span class="count">(62)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-elghansa/apply/">Elghansa <span class="count">(6)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-gala/apply/">Gala <span class="count">(16)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-galassia/apply/">Galassia <span class="count">(23)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-geberit/apply/">Geberit <span class="count">(5)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-globo/apply/">Globo <span class="count">(13)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-grohe/apply/">Grohe <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-gsi/apply/">GSI <span class="count">(15)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-gustavsberg/apply/">Gustavsberg <span class="count">(17)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-hatria/apply/">Hatria <span class="count">(28)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-hidra-ceramica/apply/">Hidra Ceramica <span class="count">(53)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-ideal-standard/apply/">Ideal Standard <span class="count">(36)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-ido/apply/">IDO <span class="count">(6)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-ifo/apply/">IFO <span class="count">(28)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-jacob-delafon/apply/">Jacob Delafon <span class="count">(38)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-jika/apply/">Jika <span class="count">(18)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-kerasan/apply/">Kerasan <span class="count">(33)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-laufen/apply/">Laufen <span class="count">(31)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-migliore/apply/">Migliore <span class="count">(22)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-noken/apply/">Noken <span class="count">(9)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-olympia/apply/">Olympia <span class="count">(38)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-opoczno/apply/">Opoczno <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-roca/apply/">Roca <span class="count">(33)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-rosa/apply/">Rosa <span class="count">(36)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-sanita-luxe/apply/">Sanita luxe <span class="count">(12)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-santek/apply/">Santek <span class="count">(17)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-santeri/apply/">Santeri <span class="count">(15)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-senda/apply/">Senda <span class="count">(15)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-serel/apply/">Serel <span class="count">(24)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-sfa/apply/">SFA <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-simas/apply/">Simas <span class="count">(37)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-smartsant/apply/">SMARTsant <span class="count">(4)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-teka/apply/">Teka <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-toto/apply/">Toto <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-vidima/apply/">Vidima <span class="count">(21)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-villeroy-boch/apply/">Villeroy & Boch <span class="count">(50)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-vitra/apply/">VitrA <span class="count">(120)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-vitruvit/apply/">Vitruvit <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-zero/apply/">Zero <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/unitazy/filter/manufacturer-is-oskolskaya-keramika/apply/">Оскольская керамика <span class="count">(33)</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="" id="sub_91">
+                                <div class="colum-brands">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-althea-ceramica/apply/">Althea ceramica <span class="count">(5)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-am-pm/apply/">Am.Pm <span class="count">(13)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-arcus/apply/">Arcus <span class="count">(5)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-artceram/apply/">ArtCeram <span class="count">(24)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-azzurra/apply/">Azzurra <span class="count">(13)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-belbagno/apply/">BelBagno <span class="count">(5)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-caprigo/apply/">Caprigo <span class="count">(5)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-catalano/apply/">Catalano <span class="count">(20)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-cersanit/apply/">Cersanit <span class="count">(4)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-cezares/apply/">Cezares <span class="count">(6)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-della/apply/">Della <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-devon-devon/apply/">Devon&Devon <span class="count">(13)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-disegno-ceramica/apply/">Disegno Ceramica <span class="count">(5)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-duravit/apply/">Duravit <span class="count">(29)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-gala/apply/">Gala <span class="count">(17)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-galassia/apply/">Galassia <span class="count">(12)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-globo/apply/">Globo <span class="count">(7)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-gsi/apply/">GSI <span class="count">(6)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-gustavsberg/apply/">Gustavsberg <span class="count">(6)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-hatria/apply/">Hatria <span class="count">(24)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-hidra-ceramica/apply/">Hidra Ceramica <span class="count">(37)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-ideal-standard/apply/">Ideal Standard <span class="count">(10)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-ido/apply/">IDO <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-ifo/apply/">IFO <span class="count">(7)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-jacob-delafon/apply/">Jacob Delafon <span class="count">(24)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-jika/apply/">Jika <span class="count">(6)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-kerasan/apply/">Kerasan <span class="count">(20)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-laufen/apply/">Laufen <span class="count">(14)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-migliore/apply/">Migliore <span class="count">(8)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-noken/apply/">Noken <span class="count">(11)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-olympia/apply/">Olympia <span class="count">(32)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-roca/apply/">Roca <span class="count">(27)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-rosa/apply/">Rosa <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-senda/apply/">Senda <span class="count">(10)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-serel/apply/">Serel <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-simas/apply/">Simas <span class="count">(20)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-vidima/apply/">Vidima <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-villeroy-boch/apply/">Villeroy & Boch <span class="count">(35)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-vitra/apply/">VitrA <span class="count">(21)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-vitruvit/apply/">Vitruvit <span class="count">(5)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-zero/apply/">Zero <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/bide/filter/manufacturer-is-oskolskaya-keramika/apply/">Оскольская керамика <span class="count">(1)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="" id="sub_100">
+                                <div class="colum-brands">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-am-pm/apply/">Am.Pm <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-artceram/apply/">ArtCeram <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-cersanit/apply/">Cersanit <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-duravit/apply/">Duravit <span class="count">(5)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-globo/apply/">Globo <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-hatria/apply/">Hatria <span class="count">(4)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-ideal-standard/apply/">Ideal Standard <span class="count">(1)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-ifo/apply/">IFO <span class="count">(4)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-jacob-delafon/apply/">Jacob Delafon <span class="count">(5)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-jika/apply/">Jika <span class="count">(8)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-kerasan/apply/">Kerasan <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-laufen/apply/">Laufen <span class="count">(7)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-olympia/apply/">Olympia <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-rosa/apply/">Rosa <span class="count">(2)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-sanela/apply/">Sanela <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-sanita-luxe/apply/">Sanita luxe <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-santek/apply/">Santek <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-serel/apply/">Serel <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-teka/apply/">Teka <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-villeroy-boch/apply/">Villeroy & Boch <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/pissuary/filter/manufacturer-is-vitra/apply/">VitrA <span class="count">(5)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="" id="sub_90">
+                                <div class="colum-brands">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-alcaplast/apply/">AlcaPlast <span class="count">(23)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-cersanit/apply/">Cersanit <span class="count">(9)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-devon-devon/apply/">Devon&Devon <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-geberit/apply/">Geberit <span class="count">(161)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-grohe/apply/">Grohe <span class="count">(96)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-ideal-standard/apply/">Ideal Standard <span class="count">(1)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-migliore/apply/">Migliore <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-ravak/apply/">Ravak <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-roca/apply/">Roca <span class="count">(4)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-sanit/apply/">Sanit <span class="count">(21)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-senda/apply/">Senda <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-serel/apply/">Serel <span class="count">(1)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-tece/apply/">Tece <span class="count">(115)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-toto/apply/">Toto <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-vidima/apply/">Vidima <span class="count">(3)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-viega/apply/">Viega <span class="count">(40)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-villeroy-boch/apply/">Villeroy & Boch <span class="count">(10)</span></a></li>
+                                                <li><a href="/catalog/installyatsii/filter/manufacturer-is-vitra/apply/">VitrA <span class="count">(21)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="" id="sub_25">
+                                <div class="colum-brands">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-1marka/apply/">1MarKa <span class="count">(232)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-alcaplast/apply/">AlcaPlast <span class="count">(9)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-alpen/apply/">Alpen <span class="count">(52)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-am-pm/apply/">Am.Pm <span class="count">(25)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-aquanet/apply/">Aquanet <span class="count">(107)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-bach/apply/">Bach <span class="count">(78)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-bas/apply/">Bas <span class="count">(50)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-castalia/apply/">Castalia <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-castone/apply/">Castone <span class="count">(5)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-cersanit/apply/">Cersanit <span class="count">(20)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-duravit/apply/">Duravit <span class="count">(2)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-esse/apply/">ESSE <span class="count">(50)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-excellent/apply/">Excellent <span class="count">(54)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-geberit/apply/">Geberit <span class="count">(4)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-grohe/apply/">Grohe <span class="count">(4)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-grossman/apply/">GROSSMAN <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-hansgrohe/apply/">Hansgrohe <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-ifo/apply/">IFO <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-jacob-delafon/apply/">Jacob Delafon <span class="count">(35)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-jacuzzi/apply/">Jacuzzi <span class="count">(4)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-jika/apply/">Jika <span class="count">(9)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-kaldewei/apply/">Kaldewei <span class="count">(11)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-kolpa-san/apply/">Kolpa San <span class="count">(214)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-laufen/apply/">Laufen <span class="count">(3)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-oso/apply/">OSO <span class="count">(14)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-rav-slezak/apply/">Rav Slezak <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-ravak/apply/">Ravak <span class="count">(115)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-riho/apply/">Riho <span class="count">(159)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-roca/apply/">Roca <span class="count">(11)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-sirem/apply/">Sirem <span class="count">(24)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-stiebel-eltron/apply/">Stiebel Eltron <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-timo/apply/">Timo <span class="count">(6)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-vega/apply/">Vega <span class="count">(1)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-vidima/apply/">Vidima <span class="count">(16)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-viega/apply/">Viega <span class="count">(11)</span></a></li>
+                                                <li><a href="/catalog/komplektuyushchie/filter/manufacturer-is-akvatek/apply/">Акватек <span class="count">(105)</span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- TODO:  -->
+            <ol class="breadcrumb">
+                <li class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <a href="/" title="Главная" itemprop="url">
+                        Главная
+                    </a>
+                </li>
+                <li>Каталог</li>
+                <li>Производители</li>
+                <li class="active">Roca</li>
+            </ol>            
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="feedback-catalog">
+                        <h2 class="card_sub-header"><span>Отзывы наших покупателей</span> </h2>
+                        <div class=" feedback-catalog_item ">
+                            <div class="row feedback-catalog_grid">
+                                <div class="col-md-2  col-sm-6  col-xs-6 no-padding-right">
+                                    <div class="feedback-catalog_img">
+                                        <img class="image-responsive" src="bitrix/templates/s2018/images/temp/feedback.png" alt="">
+                                    </div>
+                                    <p class="clearfix">34 000 руб.</p>
+
+                                </div>
+                                <div class="col-md-2  col-sm-6 col-xs-6  col-md-push-8 ">
+                                    <div class="star-block">
+                                        <div class="star-block_wr">
+                                            <div class="rating-stars clearfix">
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star-o"> </div>
+                                            </div>
+                                            <p class="star-block_text" >Общий рейтинг</p>
+                                            <div class="rating-stars clearfix">
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star-o"> </div>
+                                            </div>
+                                            <p class="clearfix star-block_text">Удобство</p>
+                                            <div class="rating-stars clearfix">
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star-o"> </div>
+                                            </div>
+                                            <p class="clearfix star-block_text">Дизайн</p>
+                                            <div class="rating-stars clearfix">
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star-o"> </div>
+                                            </div>
+                                            <p class="clearfix star-block_text">Качество</p>
+                                        </div>
+                                        <div class="feedback-catalog_name">
+                                            <span class="name">Евгений,</span>
+                                            <span class="age">29 лет</span>
+                                            <span class="city">Mocква</span>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8  col-sm-8  col-xs-12 feedback_content  col-md-pull-2">
+                                    <div class="feedback-catalog_header">Акриловая ванна Roca Line</div>
+                                    <div class="feedback_content-text">
+                                        <span class="icon plus "></span><p>Очень красивая! Спальня выглядит очень дорого и достойно!</p>
+                                    </div>
+                                    <div class="feedback_content-text">
+                                        <span class="icon minus "></span><p>Было пару мелких сколов,но за такие деньги отличный товар.</p>
+                                    </div>
+                                    <div class="feedback_content-text">
+                                        <span class="icon quote "></span><p>Хотела бы поблагодарить за очень хорошую мебель!А также, всех, кто работал со мной 
+                                            по заказу 106788, СПАСИБО ОГРОМНОЕ ВСЕМ! Я очень довольна</p>
+                                    </div>
+                                    <div class="feedback_content-text">
+                                        <span class="icon like "></span><p><b>Я рекомендую этот товар</b></p>
+                                    </div>
+                                    <div class="feedback_content-img">
+                                        <img class="image-responsive" src="bitrix/templates/s2018/images/temp/feedback-cat-1.png" alt="">
+                                        <img class="image-responsive" src="bitrix/templates/s2018/images/temp/feedback-cat-2.png" alt="">
+                                    </div>
+                                </div>          
+                            </div>
+                        </div> 
+                                                <div class=" feedback-catalog_item ">
+                            <div class="row feedback-catalog_grid">
+                                <div class="col-md-2  col-sm-6  col-xs-6 no-padding-right">
+                                    <div class="feedback-catalog_img">
+                                        <img class="image-responsive" src="bitrix/templates/s2018/images/temp/feedback.png" alt="">
+                                    </div>
+                                    <p class="clearfix">34 000 руб.</p>
+
+                                </div>
+                                <div class="col-md-2  col-sm-6 col-xs-6  col-md-push-8 ">
+                                    <div class="star-block">
+                                        <div class="star-block_wr">
+                                            <div class="rating-stars clearfix">
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star-o"> </div>
+                                            </div>
+                                            <p class="star-block_text" >Общий рейтинг</p>
+                                            <div class="rating-stars clearfix">
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star-o"> </div>
+                                            </div>
+                                            <p class="clearfix star-block_text">Удобство</p>
+                                            <div class="rating-stars clearfix">
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star-o"> </div>
+                                            </div>
+                                            <p class="clearfix star-block_text">Дизайн</p>
+                                            <div class="rating-stars clearfix">
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star"> </div>
+                                                <div class="icon star-o"> </div>
+                                            </div>
+                                            <p class="clearfix star-block_text">Качество</p>
+                                        </div>
+                                        <div class="feedback-catalog_name">
+                                            <span class="name">Евгений,</span>
+                                            <span class="age">29 лет</span>
+                                            <span class="city">Mocква</span>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8  col-sm-8  col-xs-12 feedback_content  col-md-pull-2">
+                                    <div class="feedback-catalog_header">Акриловая ванна Roca Line</div>
+                                    <div class="feedback_content-text">
+                                        <span class="icon plus "></span><p>Очень красивая! Спальня выглядит очень дорого и достойно!</p>
+                                    </div>
+                                    <div class="feedback_content-text">
+                                        <span class="icon minus "></span><p>Было пару мелких сколов,но за такие деньги отличный товар.</p>
+                                    </div>
+                                    <div class="feedback_content-text">
+                                        <span class="icon quote "></span><p>Хотела бы поблагодарить за очень хорошую мебель!А также, всех, кто работал со мной 
+                                            по заказу 106788, СПАСИБО ОГРОМНОЕ ВСЕМ! Я очень довольна</p>
+                                    </div>
+                                    <div class="feedback_content-text">
+                                        <span class="icon like "></span><p><b>Я рекомендую этот товар</b></p>
+                                    </div>
+                                    <div class="feedback_content-img">
+                                        <img class="image-responsive" src="bitrix/templates/s2018/images/temp/feedback-cat-1.png" alt="">
+                                        <img class="image-responsive" src="bitrix/templates/s2018/images/temp/feedback-cat-2.png" alt="">
+                                    </div>
+                                </div>          
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col1">
+                        <div class="logo-footer">
+                            <img class="img-responsive" src="bitrix/templates/s2018/images/logo-footer.png" alt="" />
+                        </div>
+                        <div class="copyright">© 2017 «Santech-control»<br />Все права защищены.</div>
+                    </div>
+                    <div class="col-md-3 col2">
+
+                        <ul class="list-unstyled">
+
+
+                            <li><a href="/#about_us">О компании</a></li>
+
+                            <li><a href="#">Распродажa</a></li>
+
+                            <li><a href="#">Вакансии</a></li>
+
+                            <li><a href="#">Претензии</a></li>
+
+                            <li><a href="#">Наши магазины</a></li>
+
+                            <li><a href="/rekvizity.php">Контакты</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col3">
+
+                        <ul class="list-unstyled">
+
+
+                            <li><a href="/dostavka/#dostavka">Условия доставки</a></li>
+
+                            <li><a href="/oplata/#oplata">Оплата товара</a></li>
+
+                            <li><a href="/oplata/#obmen_i_vozvrat">Получение и возврат товара</a></li>
+
+                            <li><a href="/montazh/#montazh">Установка и подключение</a></li>
+
+                            <li><a href="#">Корпоративным клиентам</a></li>
+
+                            <li><a href="#">Пользовательское соглашение</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col4">
+                        <div class="clearfix">
+                            <i class="pull-left icon phone"></i>
+                            <p class="pull-left"><a href="tel:8 499 110 66 52"><span class="phone-1">8 499 110 66 52</span></a> &nbsp;&nbsp; <a href="tel:"></a></p>
+                        </div>
+                        <div class="clearfix">
+                            <i class="pull-left icon email"></i>
+                            <p class="pull-left"><a href="mailto:info@santeсh-control.ru">info@santeсh-control.ru</a></p>
+                        </div>
+                        <div class="clearfix">
+                            <i class="pull-left icon span"></i>
+                            <p class="pull-left">Пн.—Пт.: 10.00—19.00</p>
+                        </div>
+                        <div class="social-links clearfix">
+                            <a href="" class="pull-left"><i class="icon tw"></i></a>
+                            <a href="" class="pull-left"><i class="icon fb"></i></a>
+                            <a href="" class="pull-left"><i class="icon vk"></i></a>
+                            <a href="" class="pull-left"><i class="icon ok"></i></a>
+                            <a href="" class="pull-left"><i class="icon g-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal fade my_small_modal" id="buyOneClick" tabindex="-1" role="dialog" aria-labelledby="buyOneClick">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="buyOneClickLabel">купить за 1 клик</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="phone" class="form-control" placeholder="Моб.телефон">
+                            </div>
+                            <div class="message_area"></div>
+                            <button type="submit" class="btn btn-primary btn-sm">Купить</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="preloader" title="Заргузка"></div>
+    </body>
+
+</html>

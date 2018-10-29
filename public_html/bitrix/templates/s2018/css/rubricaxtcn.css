@@ -1,0 +1,7 @@
+@font-face {font-family: "a_RubricaXtCn";
+  src: url("../fonts/e585431a6e489a364c61194e1c5ab9d0.eot"); /* IE9*/
+  src: url("../fonts/e585431a6e489a364c61194e1c5ab9d0.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/e585431a6e489a364c61194e1c5ab9d0.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/e585431a6e489a364c61194e1c5ab9d0.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/e585431a6e489a364c61194e1c5ab9d0.svg#a_RubricaXtCn") format("svg"); /* iOS 4.1- */
+}
