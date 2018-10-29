@@ -1815,11 +1815,11 @@ $(document).ready(function () {
                 nav: true,
                 items: 3
             },
-            500: {
+            600: {
                 items: 2,
                  nav: false
             },
-            0: {
+            500: {
                 items: 1,
                 nav: false
             }

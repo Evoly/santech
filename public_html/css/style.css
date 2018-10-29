@@ -3597,6 +3597,9 @@ p.tab-pane_set_item {
     text-align: center; }
     .brand_logo_content p {
       padding-top: 25px; }
+    .brand_logo_content a:hover {
+      opacity: .7;
+      transition: ease .5; }
 .brand_slider {
   padding-top: 25px; }
   .brand_slider .cert-slider {

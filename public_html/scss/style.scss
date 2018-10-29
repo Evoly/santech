@@ -4665,6 +4665,10 @@ p.tab-pane_set_item {
             p {
                 padding-top: 25px;
             }
+            a:hover {
+                opacity: .7;
+                transition: ease .5;
+            }
         }
     }
 
@@ -5350,3 +5354,4 @@ footer {
         }        
     } 
 }
+
