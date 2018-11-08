@@ -1839,6 +1839,10 @@ $(document).ready(function () {
                 nav: true,
                 items: 3
             },
+            768: {
+                items: 2,
+                 nav: true
+            },
             500: {
                 items: 2,
                  nav: false
