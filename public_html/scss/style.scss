@@ -5759,6 +5759,24 @@ p.tab-pane_set_item {
     }
   }
 
+  &_file {
+    position: relative;
+    cursor: pointer;
+    font-weight: 400;
+
+    input {
+      position: absolute;
+      opacity: 0;
+    }
+    span {
+      color: $link_color;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   &_text-sm {
     font-size: 12px;
     margin-bottom: 10px;

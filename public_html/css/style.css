@@ -4416,6 +4416,17 @@ p.tab-pane_set_item {
       transform: rotate(45deg); }
     .feedback-modal_checkbox.has-error span {
       color: #a94442; }
+  .feedback-modal_file {
+    position: relative;
+    cursor: pointer;
+    font-weight: 400; }
+    .feedback-modal_file input {
+      position: absolute;
+      opacity: 0; }
+    .feedback-modal_file span {
+      color: #108dbf; }
+      .feedback-modal_file span:hover {
+        text-decoration: underline; }
   .feedback-modal_text-sm {
     font-size: 12px;
     margin-bottom: 10px; }
