@@ -2248,6 +2248,48 @@ $(document).ready(function () {
 
   $('.about-feedback').owlCarousel(owlOptions_about);
   $('.about-cert').owlCarousel(owlOptions_about);
+
+  //stars
+  const gradeText = (num) => {
+    if (num === 1)  return 'Ужасно'
+    if (num === 2) return 'Плохо'
+    if (num === 3) return 'Удовлетворительно'
+    if (num === 4) return 'Хорошо'
+    if (num === 5) return 'Отлично'
+  };
+$('.js-stars .icon').on('mouseover', function(){
+  var grade = parseInt($(this).data('value'), 10);
+  console.log(grade);
+  $(this).parent().children('.icon').each(function(e){
+    if (e < grade) {
+      $(this).addClass('star');
+      $(this).removeClass('star-o');
+      $(this).parent().siblings('.js-grade-text').text(gradeText(grade));
+    }
+    else {
+      $(this).removeClass('star');
+      $(this).addClass('star-o');
+    }
+  });
+  $(this).click( function(){
+    $(this).parent().children('.icon').each(function(e){
+      if (e < grade) {
+        $(this).addClass('active');
+      }
+      else {
+        $(this).removeClass('active');
+      }
+    });
+  });
+}).on('mouseout', function(){
+    if ($(this).hasClass('active')) {
+      return;
+    }
+    $(this).parent().children('.icon').each(function(e){
+      $(this).addClass('star-o');
+      $(this).removeClass('star');
+    });
+  });
 });
 
 // yandex map

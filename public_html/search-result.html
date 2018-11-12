@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Статьи</title>
+  <title>Результаты поиска</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="robots" content="index, follow" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic-ext" type="text/css" rel="stylesheet" />
@@ -177,8 +177,38 @@
           </form>
         </div>
         <div class="col-md-2 col3">
-          <div class="btn-collMeWrap">
-            <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#feedBack" onclick="yaCounter35832060.reachGoal('clickoncallback'); return true;">Заказать звонок</a>
+          <div class="callme-modal">
+            <div class="btn-collMeWrap">
+              <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#feedBack" onclick="yaCounter35832060.reachGoal('clickoncallback'); return true;">Заказать звонок</a>
+            </div>
+            <div class="modal fade my_modal" id="feedBack" tabindex="-1" role="dialog" aria-labelledby="feedBack">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <i class="icon close-icon"></i>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="" id="feedBackLabel">Оставьте Ваши данные и наш специалист свяжится с Вами в близжайшее время!</p>
+                    <form action="#" method="post">
+                      <input type="hidden" name="sessid" value="8100546e92b69cde8593148cae35e06b">
+                      <input type="hidden" name="form_id" value="feedBack">
+                      <div class="form-group">
+                        <i class="icon user-green"></i>
+                        <input type="text" name="name" class="form-control" placeholder="Имя">
+                      </div>
+                      <div class="form-group">
+                        <i class="icon phone"></i>
+                        <input type="text" name="phone" class="form-control" placeholder="Моб.телефон">
+                      </div>
+                      <div class="message_area"></div>
+                      <button type="submit" class="btn btn-primary btn-sm">Отправить</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1185,42 +1215,800 @@
           Главная
         </a>
       </li>
-      <li class="active">Статьи</li>
+      <li class="active">Результаты поиска</li>
     </ol>
-    <h1 class="border-top">Статьи</h1>
+    <h1 class="card_sub-header search-result_header"><span>Результаты поиска</span></h1>
     <div class="row">
       <div class="col-sm-3 col-xs-5">
         <ul class="list-unstyled product-list">
-          <li><a class="product-list_item" data-toggle="tab" href="#category_1">Аксессуары</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_2">Биде и писсуары</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_3">Ванны</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_4">Водонагреватели</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_5">Душевые кабины</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_6">Душевые боксы</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_7">Душевые уголки</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_8">Душевые двери и стенки</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_9">Мойки кухонные</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_10">Мебель для ванной</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_11">Поддоны</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_12">Полотенцесушители</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_13">Люки сантехнические</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_14">Унитазы</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_15">Унитаз+инсталляция</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_16">Инсталляции</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_17">Раковины</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_18">Смесители</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_19">Теплые полы</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_20">Трапы и лотки</a></li>
-          <li><a class="product-list_item" data-toggle="tab" href="#category_21">Другие товары</a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_1">Аксессуары <span>(<span>2000</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_2">Биде и писсуары <span>(<span>137</span> )</span></a></li>
+          <li class="active"><a class="product-list_item" data-toggle="tab" href="#category_3">Ванны <span>(<span>25</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_4">Водонагреватели <span>(<span>2</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_5">Душевые кабины <span>(<span>14</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_6">Душевые боксы <span>(<span>238</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_7">Душевые уголки <span>(<span>238</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_8">Душевые двери и стенки <span>(<span>90</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_9">Мойки кухонные <span>(<span>238</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_10">Мебель для ванной <span>(<span>238</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_11">Поддоны <span>(<span>14</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_12">Полотенцесушители <span>(<span>238</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_13">Люки сантехнические <span>(<span>238</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_14">Унитазы <span>(<span>238</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_15">Унитаз+инсталляция <span>(<span>238</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_16">Инсталляции <span>(<span>238</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_17">Раковины <span>(<span>238</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_18">Смесители <span>(<span>14</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_19">Теплые полы <span>(<span>238</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_20">Трапы и лотки <span>(<span>238</span> )</span></a></li>
+          <li><a class="product-list_item" data-toggle="tab" href="#category_21">Другие товары <span>(<span>1708</span> )</span></a></li>
         </ul>
       </div>
-      <section class="col-sm-9 col-xs-7">
-        <div class="articles_wrapper">
-          <div class="articles_sort">
-            <span>Сортировать по:</span>
-            <button class="btn btn-sort btn-sort_lg active-sort " value="popular_desc" data-invert="popular_asc">
-              <i class="glyphicon glyphicon-sort-by-attributes"></i> Популярности
+      <row class="col-sm-9 col-xs-7">
+        <div class="order-control clearfix">
+          <div class="pull-left">
+            <span class="title">Сортировать по:</span>
+            <button class="btn btn-sort btn-sort_lg active-sort" value="popular_desc" data-invert="popular_asc">
+              <i class="glyphicon glyphicon-sort-by-attributes-alt"></i> Популярности
             </button>
+            <button class="btn btn-sort btn-sort_md" value="price_asc" data-invert="price_desc">
+              <i class="glyphicon glyphicon-sort-by-attributes"></i> Цене
+            </button>
+          </div>
+          <div class="pull-right">
+            <span class="titleOnPage">На странице:</span>
+            <div class="btn-group bootstrap-select onPageView">
+              <select name="onPageView" class="selectpicker onPageView" data-style="btn-white" tabindex="-98">
+                <option value="18">18</option>
+                <option value="32">32</option>
+                <option value="64">64</option>
+                <option value="100">100</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <section class="row catalog_items search-result_content">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-1.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap price_wrap_old-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="250900">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">250 900 руб.</div>
+                    <div class="price old_price">290 000 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/poland-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Польша&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-2.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap " itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="4900">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">4 900 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/czech-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Чехия&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-3.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="56200">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">56 200 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/rf-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Россия&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-2.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap " itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="4900">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">4 900 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/czech-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Чехия&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-3.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="56200">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">56 200 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/rf-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Россия&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-3.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="56200">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">56 200 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/rf-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Россия&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-2.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap " itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="4900">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">4 900 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/czech-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Чехия&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-3.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="56200">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">56 200 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/rf-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Россия&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-3.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="56200">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">56 200 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/rf-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Россия&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-2.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap " itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="4900">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">4 900 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/czech-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Чехия&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-3.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="56200">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">56 200 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/rf-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Россия&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-3.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="56200">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">56 200 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/rf-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Россия&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-2.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap " itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="4900">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">4 900 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/czech-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Чехия&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-3.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="56200">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">56 200 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/rf-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Россия&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="catalog_item" id="" itemscope itemtype="http://schema.org/Product">
+              <div class="img-wrap-wrap">
+                <div class="img-wrap">
+                  <a href="#"><img src="bitrix/templates/s2018/images/temp/catalog-3.png" class="img-responsive" alt="" title="" itemprop="image" /></a>
+                </div>
+              </div>
+              <div class="rating-stars clearfix">
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+                <div class="pull-left item"><i class="icon star-o"></i></div>
+              </div>
+              <a href="" class="name" itemprop="name">Акриловая ванна Roca Line, белая 170x70 см, </a>
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="price_wrap" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="price" content="56200">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <div class="price">56 200 руб.</div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <a href="#" class="btn btn-primary btn-block addToCart toCartFromList" data-id=""></a>
+                </div>
+              </div>
+              <div class="properties" itemprop="description">
+                <div class="property">
+                  <span class="label-p">Производитель: </span>
+                  1MarKa </div>
+                <div class="property">
+                  <span class="label-p">Размер, см: </span>
+                  130x70x42 </div>
+              </div>
+              <div class="flag-wrap clearfix">
+                <div class="pull-left flag">
+                  <img src="bitrix/templates/s2018/images/temp/rf-flag.png" alt="" />
+                </div>
+                <div class="pull-left">Россия&nbsp;</div>
+              </div>
+              <div class="labels">
+                <div class="action_label icon_label">Акция</div>
+                <div class="g-clr"></div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <div class="getMore-wrap">
+          <div class="page-navigation">
+            <span class="page-previous pag-page">&nbsp;<i class="icon pag-l"></i></span>
+            <span class="page-first page-current pag-page">1</span>
+            <a href="#" class="pag-page ">2</a>
+            <a href="#" class="pag-page ">3</a>
+            <a href="#" class="pag-page ">4</a>
+            <a href="#" class="pag-page ">5</a>
+            <a href="#" class="pag-page ">6</a>
+            <a href="#" class="pag-page ">7</a>
+            <a href="#" class="pag-page ">8</a>
+            <a href="" class="pag-page ">9</a>
+            <a href="#" class="page-dots pag-page">№...</a>
+            <a href="#" class="pag-page">27</a>
+            <a href="#" class="page-next pag-page">&nbsp;<i class="icon pag-r"></i></a>
+          </div>
+        </div>
+
+        <div class="search-result_banner clearfix">
+          <img class="search-result_banner-img" src="bitrix/templates/s2018/images/banner.png" alt="">
+          <div class="col-md-push-4 col-md-8 col-xs-12 col-xs-push-0">
+            <span class="search-result_banner-header">Устали искать? </span>
+            <span class="search-result_banner-text">Обратитесь за помощью к специалисту. <br>Он вам поможет с подбором.</span>
+            <div class="btn-collMeWrap">
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#feedBack" onclick="yaCounter35832060.reachGoal('clickoncallback'); return true;">Заказать звонок</a>
+            </div>
+          </div>
+        </div>
+
+        <section class="search-result_articles">
+          <div class="clearfix">
+            <h2 class="card_sub-header search-result_header"><span>статьи</span></h2>
+            <a href="#" class="show-all g-right">Смотреть все</a>
           </div>
           <div class="articles_items">
             <div class="articles_item clearfix">
@@ -1229,7 +2017,9 @@
               </div>
               <div class="col-sm-8 no-padding-left-xs no-padding-right">
                 <h2 class="articles_header">Самые популярные ванны</h2>
-                <p class="articles_text"> Самой популярной и самой посещаемой комнатой  в любом доме или квартире является ванная комната. Современный человек не представляет своего быта без ванны, душа и других предметов сантехнике. А ведь эти так необходимые всем предметы пришли в наш быт не так уж и давно. Только в девятнадцатом столетии люди стали систематично принимать водные процедуры, а в моду вошло слово гигиена. Самым древним и самым практичным предметом, который дошел до наших  дней и который помогает нам не только следить за чистотой тела но и улучшать свое физическое самочувствие была и остается ванна.</p>
+                <p class="articles_text"> Самой популярной и самой посещаемой комнатой в любом доме или квартире является ванная комната. Современный человек не представляет своего быта без ванны, душа и других предметов сантехнике. А ведь эти так
+                  необходимые всем предметы пришли в наш быт не так уж и давно. Только в девятнадцатом столетии люди стали систематично принимать водные процедуры, а в моду вошло слово гигиена. Самым древним и самым практичным предметом, который
+                  дошел до наших дней и который помогает нам не только следить за чистотой тела но и улучшать свое физическое самочувствие была и остается ванна.</p>
                 <a class="articles_link" href="#">Подробнее</a>
               </div>
             </div>
@@ -1239,7 +2029,9 @@
               </div>
               <div class="col-sm-8 no-padding-left-xs no-padding-right">
                 <h2 class="articles_header">История ванны</h2>
-                <p class="articles_text"> Самой популярной и самой посещаемой комнатой  в любом доме или квартире является ванная комната. Современный человек не представляет своего быта без ванны, душа и других предметов сантехнике. А ведь эти так необходимые всем предметы пришли в наш быт не так уж и давно. Только в девятнадцатом столетии люди стали систематично принимать водные процедуры, а в моду вошло слово гигиена. Самым древним и самым практичным предметом, который дошел до наших  дней и который помогает нам не только следить за чистотой тела но и улучшать свое физическое самочувствие была и остается ванна.</p>
+                <p class="articles_text"> Самой популярной и самой посещаемой комнатой в любом доме или квартире является ванная комната. Современный человек не представляет своего быта без ванны, душа и других предметов сантехнике. А ведь эти так
+                  необходимые всем предметы пришли в наш быт не так уж и давно. Только в девятнадцатом столетии люди стали систематично принимать водные процедуры, а в моду вошло слово гигиена. Самым древним и самым практичным предметом, который
+                  дошел до наших дней и который помогает нам не только следить за чистотой тела но и улучшать свое физическое самочувствие была и остается ванна.</p>
                 <a class="articles_link" href="#">Подробнее</a>
               </div>
             </div>
@@ -1249,53 +2041,19 @@
               </div>
               <div class="col-sm-8 no-padding-left-xs no-padding-right">
                 <h2 class="articles_header">Производитель сантехники Sanitec Kolo</h2>
-                <p class="articles_text"> Самой популярной и самой посещаемой комнатой  в любом доме или квартире является ванная комната. Современный человек не представляет своего быта без ванны, душа и других предметов сантехнике. А ведь эти так необходимые всем предметы пришли в наш быт не так уж и давно. Только в девятнадцатом столетии люди стали систематично принимать водные процедуры, а в моду вошло слово гигиена. Самым древним и самым практичным предметом, который дошел до наших  дней и который помогает нам не только следить за чистотой тела но и улучшать свое физическое самочувствие была и остается ванна.</p>
-                <a class="articles_link" href="#">Подробнее</a>
-              </div>
-            </div>
-            <div class="articles_item clearfix">
-              <div class="col-sm-4 no-padding-left">
-                <img src="bitrix/templates/s2018/images/temp/article-sm.png" class="img-responsive" alt="" />
-              </div>
-              <div class="col-sm-8 no-padding-left-xs no-padding-right">
-                <h2 class="articles_header">Душевые кабины и гидромассажные боксы</h2>
-                <p class="articles_text"> Самой популярной и самой посещаемой комнатой  в любом доме или квартире является ванная комната. Современный человек не представляет своего быта без ванны, душа и других предметов сантехнике. А ведь эти так необходимые всем предметы пришли в наш быт не так уж и давно. Только в девятнадцатом столетии люди стали систематично принимать водные процедуры, а в моду вошло слово гигиена. Самым древним и самым практичным предметом, который дошел до наших  дней и который помогает нам не только следить за чистотой тела но и улучшать свое физическое самочувствие была и остается ванна.</p>
-                <a class="articles_link" href="#">Подробнее</a>
-              </div>
-            </div>
-            <div class="articles_item clearfix">
-              <div class="col-sm-4 no-padding-left">
-                <img src="bitrix/templates/s2018/images/temp/article-sm-2.png" class="img-responsive" alt="" />
-              </div>
-              <div class="col-sm-8 no-padding-left-xs no-padding-right">
-                <h2 class="articles_header">Интерьер ванной комнаты</h2>
-                <p class="articles_text"> Самой популярной и самой посещаемой комнатой  в любом доме или квартире является ванная комната. Современный человек не представляет своего быта без ванны, душа и других предметов сантехнике. А ведь эти так необходимые всем предметы пришли в наш быт не так уж и давно. Только в девятнадцатом столетии люди стали систематично принимать водные процедуры, а в моду вошло слово гигиена. Самым древним и самым практичным предметом, который дошел до наших  дней и который помогает нам не только следить за чистотой тела но и улучшать свое физическое самочувствие была и остается ванна.</p>
+                <p class="articles_text"> Самой популярной и самой посещаемой комнатой в любом доме или квартире является ванная комната. Современный человек не представляет своего быта без ванны, душа и других предметов сантехнике. А ведь эти так
+                  необходимые всем предметы пришли в наш быт не так уж и давно. Только в девятнадцатом столетии люди стали систематично принимать водные процедуры, а в моду вошло слово гигиена. Самым древним и самым практичным предметом, который
+                  дошел до наших дней и который помогает нам не только следить за чистотой тела но и улучшать свое физическое самочувствие была и остается ванна.</p>
                 <a class="articles_link" href="#">Подробнее</a>
               </div>
             </div>
           </div>
-          <div class="getMore-wrap">
-            <div class="page-navigation">
-              <span class="page-previous pag-page">&nbsp;<i class="icon pag-l"></i></span>
-              <span class="page-first page-current pag-page">1</span>
-              <a href="#" class="pag-page ">2</a>
-              <a href="#" class="pag-page ">3</a>
-              <a href="#" class="pag-page ">4</a>
-              <a href="#" class="pag-page ">5</a>
-              <a href="#" class="pag-page ">6</a>
-              <a href="#" class="pag-page ">7</a>
-              <a href="#" class="pag-page ">8</a>
-              <a href="" class="pag-page ">9</a>
-              <a href="#" class="page-dots pag-page" >№...</a>
-              <a href="#" class="pag-page">27</a>
-              <a href="#" class="page-next pag-page" >&nbsp;<i class="icon pag-r"></i></a>
-            </div>
-          </div>
-        </div>
-      </section>
+
+
+        </section>
+      </row>
     </div>
   </div>
-
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -1373,29 +2131,6 @@
       </div>
     </div>
   </footer>
-  <div class="modal fade my_small_modal" id="buyOneClick" tabindex="-1" role="dialog" aria-labelledby="buyOneClick">
-    <div class="modal-dialog modal-sm" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="buyOneClickLabel">купить за 1 клик</h4>
-        </div>
-        <div class="modal-body">
-          <form action="" method="post">
-            <div class="form-group">
-              <input type="text" name="name" class="form-control" placeholder="Имя">
-            </div>
-            <div class="form-group">
-              <input type="text" name="phone" class="form-control" placeholder="Моб.телефон">
-            </div>
-            <div class="message_area"></div>
-            <button type="submit" class="btn btn-primary btn-sm">Купить</button>
-
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div id="preloader" title="Заргузка"></div>
 </body>
