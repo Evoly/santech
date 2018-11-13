@@ -2044,7 +2044,7 @@ section.catalog-fastlinks{
             white-space: nowrap;
             text-overflow: ellipsis;
             // line-height: 38px;
-            font-size: 16px;
+            font-size: 15px;
             color: $text_color;
             font-weight: bold;
             &.have-sale{
@@ -6253,12 +6253,11 @@ p.tab-pane_set_item {
       }
     }
 
-
   &_item {
     position: relative;
     padding-left: 20px;
     color: inherit;
-    display: inline-block;
+    /* display: inline-block;*/
     width: 100%;
 
     &:before {

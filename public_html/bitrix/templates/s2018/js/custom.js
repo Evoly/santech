@@ -2190,18 +2190,9 @@ $(document).ready(function () {
         $this.parent().removeClass('has-error');
       }
     }
-
-    // textarea минимум 3 символa
-    if (name === 'plus' || name ==='minus' || name ==='feedback') {
-      if (value.length < 3 ){
-        $this.parent().addClass('has-error');
-      } else {
-        $this.parent().removeClass('has-error');
-      }
-    }
-
+    
     // проверка на пустое значение
-    if (value === '' && name !== 'file') {
+    if (value === '' && name !== 'file' && name !== 'age' && name !== 'plus' && name !== 'minus') {
       $this.parent().addClass('has-error');
     }
   }
