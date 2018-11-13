@@ -5785,15 +5785,23 @@ p.tab-pane_set_item {
     }
   }
 
-  &_file {
+  &_file-upload {
     position: relative;
-    cursor: pointer;
-    font-weight: 400;
 
     input {
       position: absolute;
       opacity: 0;
     }
+  }
+
+  &_file-name {
+    display: block;
+    color: $link_color;
+  }
+  &_file {
+    cursor: pointer;
+    font-weight: 400;
+
     span {
       color: $link_color;
 

@@ -2191,9 +2191,9 @@ $(document).ready(function () {
       }
     }
 
-    // textarea минимум 10 символов
+    // textarea минимум 3 символa
     if (name === 'plus' || name ==='minus' || name ==='feedback') {
-      if (value.length < 10 ){
+      if (value.length < 3 ){
         $this.parent().addClass('has-error');
       } else {
         $this.parent().removeClass('has-error');
@@ -2227,12 +2227,6 @@ $(document).ready(function () {
         url: `${url}?_format=json`,
         data: JSON.stringify(form.serializeFormJSON()),
         contentType: 'application/json',
-        success: function (textStatus) {
-          alert(textStatus);
-        },
-        error: function (data) {
-          console.log(data);
-        },
       });
       $('#sendFeedBack').modal('toggle');
     }
@@ -2313,6 +2307,16 @@ $('.js-stars .icon').on('mouseover', function(){
       $(this).siblings('.js-grade-text').text(gradeText(inputValue)).addClass('active');
     }
   });
+
+  //add file (feedback-modal)
+  $('#file-upload').on('input', function() {
+    var inputValue = $(this).val();
+    console.log('inputValue', inputValue);
+    inputValue = inputValue.replace(/\\|\//g, " ");
+    var text = inputValue.substr(inputValue.lastIndexOf(' '));
+    $(this).siblings('.js-file-name').text(text);
+  });
+
 });
 
 // yandex map

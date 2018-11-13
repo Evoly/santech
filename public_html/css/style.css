@@ -4436,13 +4436,17 @@ p.tab-pane_set_item {
       transform: rotate(45deg); }
     .feedback-modal_checkbox.has-error span {
       color: #a94442; }
-  .feedback-modal_file {
-    position: relative;
-    cursor: pointer;
-    font-weight: 400; }
-    .feedback-modal_file input {
+  .feedback-modal_file-upload {
+    position: relative; }
+    .feedback-modal_file-upload input {
       position: absolute;
       opacity: 0; }
+  .feedback-modal_file-name {
+    display: block;
+    color: #108dbf; }
+  .feedback-modal_file {
+    cursor: pointer;
+    font-weight: 400; }
     .feedback-modal_file span {
       color: #108dbf; }
       .feedback-modal_file span:hover {
