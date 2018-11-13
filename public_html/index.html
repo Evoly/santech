@@ -2873,13 +2873,14 @@
                   <div class="feedback-modal_row">
                     <span class="feedback-modal_grade-col">Общий рейтинг</span>
                     <div class="rating-stars js-stars">
-                      <div class="icon star" data-value = '1'> </div>
-                      <div class="icon star" data-value = '2'> </div>
-                      <div class="icon star" data-value = '3'> </div>
-                      <div class="icon star" data-value = '4'> </div>
+                      <div class="icon star-o" data-value = '1'> </div>
+                      <div class="icon star-o" data-value = '2'> </div>
+                      <div class="icon star-o" data-value = '3'> </div>
+                      <div class="icon star-o" data-value = '4'> </div>
                       <div class="icon star-o" data-value = '5'> </div>
+                      <input type="hidden" name="averageGrade" value="">
                     </div>
-                    <span class="feedback-modal_grade-text js-grade-text">Хорошо</span>
+                    <span class="feedback-modal_grade-text js-grade-text"></span>
                   </div>
                   <div class="feedback-modal_row">
                     <span class="feedback-modal_grade-col">Удобство</span>
@@ -2889,8 +2890,9 @@
                       <div class="icon star" data-value = '3'> </div>
                       <div class="icon star-o" data-value = '4'> </div>
                       <div class="icon star-o" data-value = '5'> </div>
+                      <input type="hidden" name="comfortGrade" value="3">
                     </div>
-                    <span class="feedback-modal_grade-text js-grade-text">Удовлетворительно</span>
+                    <span class="feedback-modal_grade-text js-grade-text active">Удовлетворительно</span>
                   </div>
                   <div class="feedback-modal_row">
                     <span class="feedback-modal_grade-col">Дизайн</span>
@@ -2900,8 +2902,9 @@
                       <div class="icon star-o" data-value = '3'> </div>
                       <div class="icon star-o" data-value = '4'> </div>
                       <div class="icon star-o" data-value = '5'> </div>
+                      <input type="hidden" name="designGrade" value="2">
                     </div>
-                    <span class="feedback-modal_grade-text js-grade-text">Плохо</span>
+                    <span class="feedback-modal_grade-text js-grade-text active">Плохо</span>
                   </div>
                   <div class="feedback-modal_row">
                     <span class="feedback-modal_grade-col">Качество</span>
@@ -2911,14 +2914,15 @@
                       <div class="icon star-o" data-value = '3'> </div>
                       <div class="icon star-o" data-value = '4'> </div>
                       <div class="icon star-o" data-value = '5'> </div>
+                      <input type="hidden" name="qualityGrade" value="1">
                     </div>
-                    <span class="feedback-modal_grade-text js-grade-text">Ужасно</span>
+                    <span class="feedback-modal_grade-text js-grade-text active">Ужасно</span>
                   </div>
                 </div>
               </div>
               <div class="feedback-modal_col-sm">
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" placeholder="Имя">
+                  <input type="text" name="name" class="form-control" placeholder="Имя" required>
                 </div>
                 <div class="form-group">
                   <input type="text" name="phone" class="form-control" placeholder="Телефон">
@@ -2962,11 +2966,11 @@
                 <p class='feedback-modal_text-sm'>Прикрепите фото товара к отзыву, перетащив его эту область,или
                    <label class="feedback-modal_file">
                     <span>выберите файл</span>
-                    <input type="file">
+                    <input type="file" name="file">
                    </label>
                 </p>
                 <label class="feedback-modal_checkbox">
-                  <input type="checkbox" name="confirm" formnovalidate>
+                  <input type="checkbox" name="confirm">
                   <span class="checkmark checkmark_box"></span>
                   <span class="">Я согласен с правилами публикации пользовательского контента</span>
                 </label>

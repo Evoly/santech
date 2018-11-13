@@ -496,7 +496,7 @@ $(function(){
                         var name = $kitProduct.find('.name-wrap a').text();
                         var src = $kitProduct.find('.img-sm img').attr('src');
                         var dataImg = $clone.find('a').attr('data-img');
-                        console.log(dataImg);
+                        // console.log(dataImg);
                         $clone.addClass('selected');
                         $clone.find('.checkbox_wr').remove();
                         $clone.find('.checkbox_wr-wrap').prepend('<div class="check-wr"><span class="icon check"></span></div>');
@@ -601,12 +601,12 @@ $(function(){
                     $('title').text(title.substring(0, find));
                 else
                     $('title').text(title.substring(0, find + 11) + newNum);
-                console.log(num)
+                // console.log(num)
             } else {
                 $('title').text(title + ', страница ' + newNum);
             }
 
-            console.log(find)
+            // console.log(find)
 
 
 
@@ -668,7 +668,7 @@ $(function(){
     $('.order-control .btn-sort').on('click', function(){
         var $this = $(this);
         var $icon = $this.find('.glyphicon');
-	var value = $this.val();
+	      var value = $this.val();
         var data = new Array();
 
 
@@ -2026,7 +2026,7 @@ $(document).ready(function () {
 
   $('.panel_title a').click(function () {
     var cross = $(this).siblings('.cross');
-    console.log(cross);;
+    // console.log(cross);
     if (cross.hasClass('closed')) {
       cross.removeClass('closed');
     } else {
@@ -2120,7 +2120,6 @@ $(document).ready(function () {
   $('.tab-components_slider').on("mouseenter", '.slider_item', function (event) {
        event.preventDefault();
        var target = $( event.target );
-       console.log(target);
        var top = $(this).offset().top - $(window).scrollTop() + $(this).outerHeight() + 5;
       var left = $(this).offset().left;
       var imgWidth = $(this).outerWidth();
@@ -2176,18 +2175,34 @@ $(document).ready(function () {
     const value = $this.val();
     const name = $this.attr('name');
 
+    // чекбокс "Я согласен..."
     if (name === 'confirm' && !$this.prop('checked')) {
       $this.parent().addClass('has-error');
     } else {
       $this.parent().removeClass('has-error');
     }
 
+    // почта
     if (name === 'email') {
       if (!value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
-        console.log($this.parent());
+        $this.parent().addClass('has-error');
       } else {
         $this.parent().removeClass('has-error');
       }
+    }
+
+    // textarea минимум 10 символов
+    if (name === 'plus' || name ==='minus' || name ==='feedback') {
+      if (value.length < 10 ){
+        $this.parent().addClass('has-error');
+      } else {
+        $this.parent().removeClass('has-error');
+      }
+    }
+
+    // проверка на пустое значение
+    if (value === '' && name !== 'file') {
+      $this.parent().addClass('has-error');
     }
   }
 
@@ -2197,8 +2212,12 @@ $(document).ready(function () {
     const form = $this.parents('form');
     const url = form.attr('action');
     const input = form.find('input');
+    const textarea = form.find('textarea');
 
     input.each(function () {
+      checkInput($(this));
+    });
+    textarea.each(function () {
       checkInput($(this));
     });
 
@@ -2250,21 +2269,22 @@ $(document).ready(function () {
   $('.about-cert').owlCarousel(owlOptions_about);
 
   //stars
-  const gradeText = (num) => {
+  function gradeText(num) {
     if (num === 1)  return 'Ужасно'
     if (num === 2) return 'Плохо'
     if (num === 3) return 'Удовлетворительно'
     if (num === 4) return 'Хорошо'
     if (num === 5) return 'Отлично'
+    if (num === '') return ''
   };
 $('.js-stars .icon').on('mouseover', function(){
   var grade = parseInt($(this).data('value'), 10);
-  console.log(grade);
+
   $(this).parent().children('.icon').each(function(e){
     if (e < grade) {
       $(this).addClass('star');
       $(this).removeClass('star-o');
-      $(this).parent().siblings('.js-grade-text').text(gradeText(grade));
+      $(this).parent().siblings('.js-grade-text').text(gradeText(grade)).addClass('active');
     }
     else {
       $(this).removeClass('star');
@@ -2272,23 +2292,26 @@ $('.js-stars .icon').on('mouseover', function(){
     }
   });
   $(this).click( function(){
-    $(this).parent().children('.icon').each(function(e){
-      if (e < grade) {
-        $(this).addClass('active');
-      }
-      else {
-        $(this).removeClass('active');
-      }
-    });
+    $(this).addClass('star').removeClass('star-o');
+    $(this).prevAll().addClass('star').removeClass('star-o');
+    $(this).parent().siblings('.js-grade-text').text(gradeText(grade)).addClass('active');
+    $(this).parent().children('input').val(grade);
   });
 }).on('mouseout', function(){
-    if ($(this).hasClass('active')) {
-      return;
-    }
-    $(this).parent().children('.icon').each(function(e){
+    $(this).parent().children('.icon').each(function(){
       $(this).addClass('star-o');
       $(this).removeClass('star');
+      $(this).parent().siblings('.js-grade-text').text('').removeClass('active');
     });
+  });
+  $('.js-stars').on('mouseout', function(){
+    var inputValue = parseInt($(this).children('input').val(), 10);
+    var rating = $(this).children('.icon[data-value="' + inputValue +'"]');
+    if (inputValue > 0) {
+      rating.addClass('star').removeClass('star-o');
+      rating.prevAll().addClass('star').removeClass('star-o');
+      $(this).siblings('.js-grade-text').text(gradeText(inputValue)).addClass('active');
+    }
   });
 });
 

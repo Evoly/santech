@@ -69,7 +69,7 @@ header.line {
       margin-left: 16px; }
 
 header.header {
-  background: #e1ebee url(../images/bgh.png) 0 0 repeat;
+  background: #e1ebee url(../bitrix/templates/s2018//images/bgh.png) 0 0 repeat;
   min-height: 157px;
   border-bottom: 1px solid #e3e3e3;
   padding-top: 21px; }
@@ -323,6 +323,26 @@ header.header {
     background-color: #efeedb; }
     .btn-sort.active-sort:active:focus, .btn-sort.active-sort.active, .btn-sort.active-sort:active, .btn-sort.active-sort:hover, .btn-sort.active-sort:focus {
       background-color: #efeedb; }
+  .btn-sort_lg {
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 27px;
+    border-radius: 3px;
+    font-size: 14px; }
+    .btn-sort_lg .glyphicon {
+      margin-right: 10px;
+      font-size: 12px; }
+  .btn-sort_md {
+    display: inline-block;
+    margin-left: 4px;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 3px;
+    font-size: 14px; }
+    .btn-sort_md .glyphicon {
+      margin-right: 10px;
+      font-size: 12px; }
 
 .btn .icon {
   margin-right: 9px; }
@@ -406,7 +426,7 @@ ul.site-menu-imtems {
     min-height: 500px; } }
 
 footer.footer {
-  background: #e1ebee url(../images/bgh.png) 0 0 repeat;
+  background: #e1ebee url(../bitrix/templates/s2018//images/bgh.png) 0 0 repeat;
   border-top: 1px solid #e3e3e3;
   padding: 44px 0 43px 0;
   line-height: 24px;
@@ -4328,7 +4348,7 @@ p.tab-pane_set_item {
     color: #999999;
     padding-left: 12px;
     position: relative; }
-    .feedback-modal_grade-text:before {
+    .feedback-modal_grade-text.active:before {
       content: '';
       display: block;
       position: absolute;
@@ -4945,27 +4965,5 @@ p.tab-pane_set_item {
     z-index: 2;
     background-color: #fff;
     padding-left: 5px; }
-
-.btn-sort_lg {
-  display: inline-block;
-  margin-left: 10px;
-  padding-left: 15px;
-  padding-right: 27px;
-  border-radius: 3px;
-  font-size: 14px; }
-  .btn-sort_lg .glyphicon {
-    margin-right: 10px;
-    font-size: 12px; }
-
-.btn-sort_md {
-  display: inline-block;
-  margin-left: 4px;
-  padding-left: 15px;
-  padding-right: 20px;
-  border-radius: 3px;
-  font-size: 14px; }
-  .btn-sort_md .glyphicon {
-    margin-right: 10px;
-    font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */

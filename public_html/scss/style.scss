@@ -117,7 +117,7 @@ header.line{
     }
 }
 header.header{
-    background: #e1ebee url(../images/bgh.png) 0 0 repeat;
+    background: #e1ebee url(../bitrix/templates/s2018//images/bgh.png) 0 0 repeat;
     min-height: 157px;
     border-bottom: 1px solid  $border_color;
     padding-top: 21px;
@@ -451,6 +451,32 @@ header.header{
             background-color: #efeedb;
         }
     }
+    &_lg {
+      display: inline-block;
+      margin-left: 10px;
+      padding-left: 15px;
+      padding-right: 27px;
+      border-radius: 3px;
+      font-size: 14px;
+
+      .glyphicon {
+        margin-right: 10px;
+        font-size: 12px;
+      }
+    }
+    &_md {
+      display: inline-block;
+      margin-left: 4px;
+      padding-left: 15px;
+      padding-right: 20px;
+      border-radius: 3px;
+      font-size: 14px;
+
+      .glyphicon {
+        margin-right: 10px;
+        font-size: 12px;
+      }
+    }
 }
 .btn{
     .icon{
@@ -556,7 +582,7 @@ ul.site-menu-imtems{
     }
 }
 footer.footer{
-    background: #e1ebee url(../images/bgh.png) 0 0 repeat;
+    background: #e1ebee url(../bitrix/templates/s2018//images/bgh.png) 0 0 repeat;
     border-top: 1px solid  $border_color;
     padding: 44px 0 43px 0;
     line-height: 24px;
@@ -5646,7 +5672,7 @@ p.tab-pane_set_item {
     padding-left: 12px;
     position: relative;
 
-    &:before {
+    &.active:before {
       content: '';
       display: block;
       position: absolute;
@@ -6503,30 +6529,4 @@ p.tab-pane_set_item {
       padding-left: 5px;
     }
   }
-}
-.btn-sort_lg {
-  display: inline-block;
-  margin-left: 10px;
-  padding-left: 15px;
-  padding-right: 27px;
-  border-radius: 3px;
-  font-size: 14px;
-
-  .glyphicon {
-    margin-right: 10px;
-    font-size: 12px;
-  }
-}
-  .btn-sort_md {
-    display: inline-block;
-    margin-left: 4px;
-    padding-left: 15px;
-    padding-right: 20px;
-    border-radius: 3px;
-    font-size: 14px;
-
-    .glyphicon {
-      margin-right: 10px;
-      font-size: 12px;
-    }
 }
