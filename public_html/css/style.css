@@ -4398,7 +4398,7 @@ p.tab-pane_set_item {
       transform: rotate(-45deg); }
     @media (max-width: 768px) {
       .feedback-modal .close {
-        top: -20px; } }
+        top: -15px; } }
   .feedback-modal_checkbox-wr {
     margin-top: 25px;
     margin-bottom: 15px; }
@@ -4440,10 +4440,33 @@ p.tab-pane_set_item {
     position: relative; }
     .feedback-modal_file-upload input {
       position: absolute;
-      opacity: 0; }
+      opacity: 0;
+      left: -100%; }
   .feedback-modal_file-name {
-    display: block;
-    color: #108dbf; }
+    color: #108dbf;
+    position: relative; }
+  .feedback-modal_file-del {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding-left: 10px; }
+    .feedback-modal_file-del:after, .feedback-modal_file-del:before {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 1px;
+      background-color: #d24a45;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto; }
+    .feedback-modal_file-del:before {
+      transform: rotate(45deg); }
+    .feedback-modal_file-del:after {
+      transform: rotate(-45deg); }
   .feedback-modal_file {
     cursor: pointer;
     font-weight: 400; }
@@ -4453,7 +4476,8 @@ p.tab-pane_set_item {
         text-decoration: underline; }
   .feedback-modal_text-sm {
     font-size: 12px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    display: block; }
   .feedback-modal p.feedback-modal_text-sm {
     color: #666666; }
   .feedback-modal .btn-default {
@@ -4969,5 +4993,9 @@ p.tab-pane_set_item {
     z-index: 2;
     background-color: #fff;
     padding-left: 5px; }
+
+.is-dragover {
+  background: #eaf3f7;
+  transition: all ease-in-out .5s; }
 
 /*# sourceMappingURL=style.css.map */

@@ -5735,7 +5735,7 @@ p.tab-pane_set_item {
       transform: rotate(-45deg);
     }
     @media (max-width: 768px) {
-      top: -20px;
+      top: -15px;
     }
   }
   &_checkbox-wr {
@@ -5791,12 +5791,48 @@ p.tab-pane_set_item {
     input {
       position: absolute;
       opacity: 0;
+      left: -100%;
     }
   }
 
   &_file-name {
-    display: block;
+    // display: block;
     color: $link_color;
+    position: relative;
+    // display: inline-block;
+
+
+  }
+  &_file-del {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding-left: 10px;
+
+    &:after,
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 1px;
+      background-color: #d24a45;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
   }
   &_file {
     cursor: pointer;
@@ -5814,6 +5850,7 @@ p.tab-pane_set_item {
   &_text-sm {
     font-size: 12px;
     margin-bottom: 10px;
+    display: block;
   }
 
   p.feedback-modal_text-sm {
@@ -6536,4 +6573,8 @@ p.tab-pane_set_item {
       padding-left: 5px;
     }
   }
+}
+.is-dragover {
+  background: $very_light_blue;
+  transition: all ease-in-out .5s;
 }

@@ -2190,12 +2190,40 @@ $(document).ready(function () {
         $this.parent().removeClass('has-error');
       }
     }
-    
+
     // проверка на пустое значение
     if (value === '' && name !== 'file' && name !== 'age' && name !== 'plus' && name !== 'minus') {
       $this.parent().addClass('has-error');
     }
   }
+
+// drag and drop
+  var upload = $('.feedback-modal_file-upload');
+  var droppedFiles = false;
+
+  upload.on('drag dragstart dragend dragover dragenter dragleave drop', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+    })
+    .on('dragover dragenter', function() {
+      upload.addClass('is-dragover');
+    })
+    .on('dragleave dragend drop', function() {
+      upload.removeClass('is-dragover');
+    })
+    .on('drop', function(e) {
+      droppedFiles = e.originalEvent.dataTransfer.files;
+      $('.js-file-name').text(droppedFiles[0].name);
+      $('#file-upload').val('');
+      $('.js-file-del').removeClass('hidden');
+    });
+
+  // переменная для загружаемых файлов (input)
+  var uploadFiles;
+  $('input[type=file]').on('change', function(){
+  	uploadFiles = this.files;
+    console.log('uploadFiles', uploadFiles);
+  });
 
   $(document).on('click', '.js-submit', function (e) {
     e.preventDefault();
@@ -2204,6 +2232,7 @@ $(document).ready(function () {
     const url = form.attr('action');
     const input = form.find('input');
     const textarea = form.find('textarea');
+    var data = new FormData();
 
     input.each(function () {
       checkInput($(this));
@@ -2212,12 +2241,28 @@ $(document).ready(function () {
       checkInput($(this));
     });
 
+    if (droppedFiles) {
+      files = droppedFiles
+    } else {
+      files = uploadFiles
+    }
+
+    if (files) {
+      $.each( files, function( key, value ){
+        data.append( key, value );
+      });
+    }
+
+    data.append('feedback', JSON.stringify(form.serializeFormJSON()));
+
     if (!form.find('.has-error').length) {
       $.ajax({
         type: 'POST',
         url: `${url}?_format=json`,
-        data: JSON.stringify(form.serializeFormJSON()),
-        contentType: 'application/json',
+        data: data,
+        contentType: false,
+        processData : false,
+
       });
       $('#sendFeedBack').modal('toggle');
     }
@@ -2262,33 +2307,33 @@ $(document).ready(function () {
     if (num === 5) return 'Отлично'
     if (num === '') return ''
   };
-$('.js-stars .icon').on('mouseover', function(){
-  var grade = parseInt($(this).data('value'), 10);
+  $('.js-stars .icon').on('mouseover', function(){
+    var grade = parseInt($(this).data('value'), 10);
 
-  $(this).parent().children('.icon').each(function(e){
-    if (e < grade) {
-      $(this).addClass('star');
-      $(this).removeClass('star-o');
-      $(this).parent().siblings('.js-grade-text').text(gradeText(grade)).addClass('active');
-    }
-    else {
-      $(this).removeClass('star');
-      $(this).addClass('star-o');
-    }
-  });
-  $(this).click( function(){
-    $(this).addClass('star').removeClass('star-o');
-    $(this).prevAll().addClass('star').removeClass('star-o');
-    $(this).parent().siblings('.js-grade-text').text(gradeText(grade)).addClass('active');
-    $(this).parent().children('input').val(grade);
-  });
-}).on('mouseout', function(){
-    $(this).parent().children('.icon').each(function(){
-      $(this).addClass('star-o');
-      $(this).removeClass('star');
-      $(this).parent().siblings('.js-grade-text').text('').removeClass('active');
+    $(this).parent().children('.icon').each(function(e){
+      if (e < grade) {
+        $(this).addClass('star');
+        $(this).removeClass('star-o');
+        $(this).parent().siblings('.js-grade-text').text(gradeText(grade)).addClass('active');
+      }
+      else {
+        $(this).removeClass('star');
+        $(this).addClass('star-o');
+      }
     });
-  });
+    $(this).click( function(){
+      $(this).addClass('star').removeClass('star-o');
+      $(this).prevAll().addClass('star').removeClass('star-o');
+      $(this).parent().siblings('.js-grade-text').text(gradeText(grade)).addClass('active');
+      $(this).parent().children('input').val(grade);
+    });
+  }).on('mouseout', function(){
+      $(this).parent().children('.icon').each(function(){
+        $(this).addClass('star-o');
+        $(this).removeClass('star');
+        $(this).parent().siblings('.js-grade-text').text('').removeClass('active');
+      });
+    });
   $('.js-stars').on('mouseout', function(){
     var inputValue = parseInt($(this).children('input').val(), 10);
     var rating = $(this).children('.icon[data-value="' + inputValue +'"]');
@@ -2306,7 +2351,21 @@ $('.js-stars .icon').on('mouseover', function(){
     inputValue = inputValue.replace(/\\|\//g, " ");
     var text = inputValue.substr(inputValue.lastIndexOf(' '));
     $(this).siblings('.js-file-name').text(text);
+    if (text.length > 0) {
+      $(this).siblings('.js-file-del').removeClass('hidden');
+    } else {
+      $(this).siblings('.js-file-del').addClass('hidden');
+    }
   });
+
+
+
+  $('.js-file-del').on('click', function () {
+      $('#file-upload[type=file]').val('');
+      droppedFiles = false;
+      $(this).addClass('hidden');
+      $(this).siblings('.js-file-name').text('');
+  })
 
 });
 
