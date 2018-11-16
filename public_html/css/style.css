@@ -2584,7 +2584,8 @@ ul.cities-list {
   border-image-slice: 9;
   border-top: none;
   border-left: none;
-  border-right: none; }
+  border-right: none;
+  border-top-width: 0; }
   .card_right-top .btn {
     display: block; }
   .card_right-top .btn-default,
@@ -4798,7 +4799,7 @@ p.tab-pane_set_item {
     position: relative;
     padding-left: 20px;
     color: inherit;
-    /* display: inline-block;*/
+    display: inline-block;
     width: 100%; }
     .product-list_item:before {
       content: '';
@@ -4828,6 +4829,8 @@ p.tab-pane_set_item {
   padding-top: 15px;
   padding-bottom: 15px;
   color: #666666; }
+  .articles_sort.order-control {
+    margin-bottom: 0; }
 .articles_items {
   margin-bottom: 30px; }
 .articles_item {
@@ -4851,11 +4854,16 @@ p.tab-pane_set_item {
   margin-top: 30px; }
   .article_content p {
     margin-bottom: 20px; }
-.article_img img {
+.article_img {
   max-width: 100%; }
+  .article_img img {
+    max-width: 100%; }
 .article_header {
   font-size: 30px;
   font-weight: 600; }
+  @media (max-width: 768px) {
+    .article_header {
+      font-size: 25px; } }
 .article_sub-header {
   font-size: 18px;
   font-weight: 700;
@@ -4889,8 +4897,15 @@ p.tab-pane_set_item {
     top: 15px;
     bottom: auto;
     left: auto; }
+    @media (max-width: 767px) {
+      .callme-modal .modal {
+        top: 100%;
+        right: 0;
+        left: 0;
+        margin: auto; } }
   .callme-modal .modal-dialog {
-    width: 340px; }
+    width: 340px;
+    max-width: 100%; }
   .callme-modal .modal-content:before {
     position: absolute;
     content: '';
@@ -4898,6 +4913,9 @@ p.tab-pane_set_item {
     right: 80px;
     border: 6px solid transparent;
     border-bottom: 6px solid #ffffff; }
+    @media (max-width: 767px) {
+      .callme-modal .modal-content:before {
+        right: calc(50% - 3px); } }
   .callme-modal .modal.my_modal .modal-body {
     position: relative;
     background-color: #eaf3f7;
@@ -4927,6 +4945,15 @@ p.tab-pane_set_item {
     padding-left: 40px; }
   .callme-modal input::-webkit-input-placeholder {
     color: #999999; }
+
+.buy-modal .modal-header {
+  padding-top: 20px;
+  background-color: #eaf3f7;
+  color: #444444; }
+.buy-modal .modal-title {
+  font-weight: 700; }
+.buy-modal .modal.my_modal .modal-body {
+  padding-bottom: 20px; }
 
 .search-result_header {
   margin-top: 0;

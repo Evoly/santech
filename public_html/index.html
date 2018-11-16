@@ -178,8 +178,38 @@
           </form>
         </div>
         <div class="col-md-2 col3">
-          <div class="btn-collMeWrap">
-            <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#feedBack" onclick="yaCounter35832060.reachGoal('clickoncallback'); return true;">Заказать звонок</a>
+          <div class="callme-modal">
+            <div class="btn-collMeWrap">
+              <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#feedBack" onclick="yaCounter35832060.reachGoal('clickoncallback'); return true;">Заказать звонок</a>
+            </div>
+            <div class="modal fade my_modal" id="feedBack" tabindex="-1" role="dialog" aria-labelledby="feedBack">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <i class="icon close-icon"></i>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="" id="feedBackLabel">Оставьте Ваши данные и наш специалист свяжится с Вами в близжайшее время!</p>
+                    <form action="#" method="post">
+                      <input type="hidden" name="sessid" value="8100546e92b69cde8593148cae35e06b">
+                      <input type="hidden" name="form_id" value="feedBack">
+                      <div class="form-group">
+                        <i class="icon user-green"></i>
+                        <input type="text" name="name" class="form-control" placeholder="Имя">
+                      </div>
+                      <div class="form-group">
+                        <i class="icon phone"></i>
+                        <input type="text" name="phone" class="form-control" placeholder="Моб.телефон">
+                      </div>
+                      <div class="message_area"></div>
+                      <button type="submit" class="btn btn-primary btn-sm">Отправить</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -2639,7 +2669,38 @@
               <p class="card_price-new">25&nbsp;400&nbsp;руб.</p>
             </div>
             <a href="#" class="btn btn-primary">Купить</a>
-            <a href="#" class="btn btn-white-green">Купить в 1 клик</a>
+                    <div class="callme-modal buy-modal">
+            <a href="#" class="btn btn-white-green" data-toggle="modal" data-target="#buyOneClick">Купить в 1 клик</a>
+            <div class="modal fade my_modal" id="buyOneClick" tabindex="-1" role="dialog" aria-labelledby="buyOneClick">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <i class="icon close-icon"></i>
+                    </button>
+                    <h4 class="modal-title text-center" id="buyOneClickLabel">Купить за 1 клик</h4>
+                    <div class="text-center">Акриловая ванна Roca Easy </div>
+                  </div>
+                  <div class="modal-body">
+                    <form action="#" method="post">
+                      <input type="hidden" name="sessid" value="8100546e92b69cde8593148cae35e06b">
+                      <input type="hidden" name="form_id" value="feedBack">
+                      <div class="form-group">
+                        <i class="icon user-green"></i>
+                        <input type="text" name="name" class="form-control" placeholder="Имя">
+                      </div>
+                      <div class="form-group">
+                        <i class="icon phone"></i>
+                        <input type="text" name="phone" class="form-control" placeholder="Ваш телефон">
+                      </div>
+                      <div class="message_area"></div>
+                      <button type="submit" class="btn btn-primary btn-sm">Купить</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
           </div>
           <div class="card_right-bottom">
             <div class="card_right-wr">
@@ -2824,34 +2885,12 @@
       </div>
     </div>
   </footer>
-  <div class="modal fade my_small_modal" id="buyOneClick" tabindex="-1" role="dialog" aria-labelledby="buyOneClick">
-    <div class="modal-dialog modal-sm" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="buyOneClickLabel">купить за 1 клик</h4>
-        </div>
-        <div class="modal-body">
-          <form action="" method="post">
-            <div class="form-group">
-              <input type="text" name="name" class="form-control" placeholder="Имя">
-            </div>
-            <div class="form-group">
-              <input type="text" name="phone" class="form-control" placeholder="Моб.телефон">
-            </div>
-            <div class="message_area"></div>
-            <button type="submit" class="btn btn-primary btn-sm">Купить</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <div class="modal fade gallery-modal" id="gallery" role="dialog">
     <div class="modal-dialog">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <div class="modal-content">
         <div class="modal-header">
-
           <h4 class="gallery-title">Modal Header</h4>
         </div>
         <div class="modal-body gallery-content"> </div>

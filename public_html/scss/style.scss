@@ -3329,6 +3329,7 @@ ul.cities-list{
         border-top: none;
         border-left: none;
         border-right: none;
+        border-top-width: 0;
 
         .btn {
             display: block;
@@ -6294,7 +6295,7 @@ p.tab-pane_set_item {
     position: relative;
     padding-left: 20px;
     color: inherit;
-    /* display: inline-block;*/
+    display: inline-block;
     width: 100%;
 
     &:before {
@@ -6335,6 +6336,10 @@ p.tab-pane_set_item {
     padding-top: 15px;
     padding-bottom: 15px;
     color: $gray;
+
+    &.order-control {
+      margin-bottom: 0;
+    }
   }
   &_btn-sort {
 
@@ -6377,6 +6382,7 @@ p.tab-pane_set_item {
   }
 
   &_img {
+    max-width: 100%;
     img {
       max-width: 100%;
     }
@@ -6385,6 +6391,9 @@ p.tab-pane_set_item {
   &_header {
     font-size: 30px;
     font-weight: 600;
+    @media (max-width:768px) {
+       font-size: 25px;
+    }
   }
   &_sub-header {
     font-size: 18px;
@@ -6426,10 +6435,18 @@ p.tab-pane_set_item {
     top: 15px;
     bottom: auto;
     left: auto;
+
+    @media (max-width: 767px){
+        top: 100%;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
   }
 
   .modal-dialog {
     width: 340px;
+    max-width: 100%;
   }
 
   .modal-content:before {
@@ -6439,6 +6456,10 @@ p.tab-pane_set_item {
     right: 80px;
     border: 6px solid transparent;
     border-bottom: 6px solid #ffffff;
+
+    @media (max-width: 767px){
+      right: calc(50% - 3px);
+    }
   }
 
   .modal.my_modal .modal-body {
@@ -6484,6 +6505,19 @@ p.tab-pane_set_item {
 
   input::-webkit-input-placeholder {
     color: $light_gray;
+  }
+}
+.buy-modal {
+  .modal-header {
+    padding-top: 20px;
+    background-color: #eaf3f7;
+    color: $text-color;
+  }
+  .modal-title {
+    font-weight: 700;
+  }
+  .modal.my_modal .modal-body {
+    padding-bottom: 20px;
   }
 }
 .search-result {
