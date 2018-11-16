@@ -6446,7 +6446,9 @@ p.tab-pane_set_item {
 
   .modal-dialog {
     width: 340px;
-    max-width: 100%;
+    @media (max-width: 767px){
+      width: auto;
+    }
   }
 
   .modal-content:before {
@@ -6518,6 +6520,14 @@ p.tab-pane_set_item {
   }
   .modal.my_modal .modal-body {
     padding-bottom: 20px;
+  }
+  .modal {
+
+    @media (max-width: 767px){
+        top: 100%;
+        right: -47px;
+        left: -30px;
+    }
   }
 }
 .search-result {
