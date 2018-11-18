@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Доставка</title>
+  <title>Поиск</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="robots" content="index, follow" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic-ext" type="text/css" rel="stylesheet" />
@@ -24,11 +24,6 @@
   <link href="css/icons.css" type="text/css" data-template-style="true" rel="stylesheet" />
   <link href="bitrix/templates/s2018/css/jquery.fancybox.css" type="text/css" data-template-style="true" rel="stylesheet" />
   <link href="css/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
-
-
-
-
-
 
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -50,12 +45,8 @@
   <script type="text/javascript" src="bitrix/templates/s2018/js/jquery.fancybox.min.js"></script>
   <script type="text/javascript" src="bitrix/templates/s2018/js/spinner.js"></script>
   <script type="text/javascript" src="bitrix/templates/s2018/js/enscroll-0.6.2.min.js"></script>
-  <!-- yandex map -->
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script type="text/javascript" src="bitrix/templates/s2018/js/custom.js"></script>
-
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -103,11 +94,11 @@
       <div class="row">
         <div class="col-md-3 col1">
           <div class="geo-wrap">
-            <a href="#" class="clearfix">
+            <a href="#" class="clearfix" data-toggle="modal" data-target="#choiceCityFirst">
               <i class="icon geo pull-left"></i>
               <span class="text pull-left js-link">Москва</span>
             </a>
-            <div class="modal fade my_modal" id="choiceCityВанны" tabindex="-1" role="dialog">
+            <div class="modal fade my_modal" id="choiceCityFirst" tabindex="-1" role="dialog">
               <div class="modal-dialog modal-sm" role="document">
                 <div class="modal-content">
                   <div class="modal-body text-center">
@@ -127,7 +118,7 @@
                 </div>
               </div>
             </div>
-            <div class="modal fade my_modal" id="choiceCityВанны" tabindex="-1" role="dialog">
+            <div class="modal fade my_modal" id="choiceCityFirst" tabindex="-1" role="dialog">
               <select name="city_select" id="footer_city_select" class="selectpicker">
                 <option data-value="default" value="http://santech-control.ru/montazh/">Москва</option>
                 <option data-value="spb" value="http://spb.santech-control.ru/montazh/">Санкт-Петербург</option>
@@ -146,6 +137,7 @@
             <i class="icon email pull-left"></i>
             <span class="text pull-left">info@santeсh-control.ru</span>
           </a>
+
         </div>
         <div class="col-md-3 col4">
           <div class="clearfix">
@@ -175,13 +167,127 @@
             <div class="form-group form-group-search">
               <input type="text" name="q" class="form-control search input" id="head_search" autocomplete="off" placeholder="Поиск по сайту">
               <button type="submit" class="submit_button btn btn-default">Найти</button>
-              <div class="search_result_wrap" id="header_search_result"></div>
+              <div class="search_result_wrap" id="header_search_result">
+
+                  <div class="search_result">
+                    <div class="search_result_row">
+                      <div class="product-category text-sm">Бренд</div>
+                      <div class="search_result_content">
+                        <div class="item">
+                          <div class="img-wrap"><a href=""><img src="bitrix/templates/s2018/images/temp/search.png" alt="" /></a></div>
+                          <div class="product-name">
+                            <a href="#" class="text-blue">Лаванда</a>
+                            <div class="text-sm">Misty</div>
+                          </div>
+                          <div class="product-total text-sm"><span>25</span> товаров </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="search_result_row">
+                      <div class="product-category text-sm">Коллекции</div>
+                      <div class="search_result_content">
+                        <div class="item">
+                          <div class="img-wrap"><a href=""><img src="bitrix/templates/s2018/images/temp/article.png" alt="" /></a></div>
+                          <div class="product-name">
+                            <a href="#" >Лаванда</a>
+                            <div class="text-sm">Misty</div>
+                          </div>
+                          <div class="product-total text-sm"><span>8</span> товаров </div>
+                        </div>
+                        <div class="item">
+                          <div class="img-wrap"><a href=""><img src="bitrix/templates/s2018/images/temp/search.png" alt="" /></a></div>
+                          <div class="product-name">
+                            <a href="#" >Лаванда</a>
+                            <div class="text-sm">Misty</div>
+                          </div>
+                          <div class="product-total text-sm"><span>79</span> товаров </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="search_result_row">
+                      <div class="product-category text-sm">Категории</div>
+                      <div class="search_result_content">
+                        <div class="item">
+                          <div class="img-wrap"><a href=""><img src="bitrix/templates/s2018/images/temp/article.png" alt="" /></a></div>
+                          <div class="product-name">
+                            <a href="#" >Ванны</a>
+                          </div>
+                          <div class="product-total text-sm"><span>1250</span> товаров </div>
+                        </div>
+                        <div class="item">
+                          <div class="img-wrap"><a href=""><img src="bitrix/templates/s2018/images/temp/search.png" alt="" /></a></div>
+                          <div class="product-name">
+                            <a href="#" >Распродажа ванн</a>
+                          </div>
+                          <div class="product-total text-sm"><span>40</span> товаров </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="search_result_row">
+                      <div class="product-category text-sm">Товары</div>
+                      <div class="search_result_content">
+                        <div class="item">
+                          <div class="img-wrap"><a href=""><img src="bitrix/templates/s2018/images/temp/cat_4.png" alt="" /></a></div>
+                          <div class="product-name">
+                            <a href="#" class="">Акриловая ванна Triton Стандарт 150x70 см </a>
+                            <div class="text-sm">Артикул: <span>18950</span></div>
+                          </div>
+                          <div class="product-total text-sm"><span>29 000</span> руб </div>
+                        </div>
+                        <div class="item">
+                          <div class="img-wrap"><a href=""><img src="bitrix/templates/s2018/images/temp/search.png" alt="" /></a></div>
+                          <div class="product-name">
+                            <a href="#" class="">Чугунная ванна Roca Continental 21290100R 170x70 см,без антискользящего покрытия</a>
+                            <div class="text-sm">Артикул: <span>18950</span></div>
+                          </div>
+                          <div class="product-total text-sm"><span>40 700</span> руб </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="search_result_row">
+                      <div class="product-category"> </div>
+                      <div class="product-all-result"> Все результаты поиска (<span>4057</span>)</div>
+                    </div>
+                  </div>
+
+              </div>
             </div>
           </form>
         </div>
         <div class="col-md-2 col3">
-          <div class="btn-collMeWrap">
-            <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#feedBack" onclick="yaCounter35832060.reachGoal('clickoncallback'); return true;">Заказать звонок</a>
+          <div class="callme-modal">
+            <div class="btn-collMeWrap">
+              <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#feedBack" onclick="yaCounter35832060.reachGoal('clickoncallback'); return true;">Заказать звонок</a>
+            </div>
+            <div class="modal fade my_modal" id="feedBack" tabindex="-1" role="dialog" aria-labelledby="feedBack">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <i class="icon close-icon"></i>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="" id="feedBackLabel">Оставьте Ваши данные и наш специалист свяжится с Вами в близжайшее время!</p>
+                    <form action="#" method="post">
+                      <input type="hidden" name="sessid" value="8100546e92b69cde8593148cae35e06b">
+                      <input type="hidden" name="form_id" value="feedBack">
+                      <div class="form-group">
+                        <i class="icon user-green"></i>
+                        <input type="text" name="name" class="form-control" placeholder="Имя">
+                      </div>
+                      <div class="form-group">
+                        <i class="icon phone"></i>
+                        <input type="text" name="phone" class="form-control" placeholder="Моб.телефон">
+                      </div>
+                      <div class="message_area"></div>
+                      <button type="submit" class="btn btn-primary btn-sm">Отправить</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1176,9 +1282,7 @@
                 </div>
               </div>
             </li>
-
           </ul>
-
         </div>
       </div>
     </div>
@@ -1188,218 +1292,13 @@
           Главная
         </a>
       </li>
-      <li class="active">Доставка</li>
+      <li>Ванны</li>
+      <li>Акриловые ванны</li>
+      <li class="active">Акриловая ванна Roca Easy</li>
     </ol>
-    <h1 class="border-top">Доставка</h1>
-    <div class="row">
-      <div class="col-xs-12 shipping">
-        <ul class="nav nav-tabs card_tab">
-          <li class="active shipping_tab shipping_tab-md"><a data-toggle="tab" href="#moscow">Москва и Московская область</a></li>
-          <li class="shipping_tab shipping_tab-lg"><a data-toggle="tab" href="#st-petersburg">Санкт-Петербург и Ленинградская область</a></li>
-          <li class="shipping_tab shipping_tab-sm"><a data-toggle="tab" href="#region">Регионы</a></li>
-        </ul>
-        <div class="tab-content">
-          <div id="moscow" class="tab-pane fade in active">
-            <h3>Стоимость доставки по Москве</h3>
-            <p>В отличие от многих Интернет-магазинов мы не заставляем клиента ждать заказ целый день. Мы изначально оговариваем интервал времени, в который Вам удобно получить заказ. Водитель обязательно звонит за час до оговоренного времени
-              доставки и сообщает о времени своего прибытия. В любом случае, Вы можете запросить у Вашего менеджера прямой телефон Вашего сотрудника службы доставки и напрямую уточнить, когда точно он будет у Вас. Обращаем Ваше внимание, что доставка на
-              следующий после заказа день не всегда возможна, т.к. зависит от загруженности службы доставки. Заказы полученные ранее имеют приоритет по срокам доставки. <a class="linkToDelivery" href="#collapse1_2">link to delivery</a> </p>
-            <div class="panel-group" id="accordion_1">
-              <div class="panel ">
-                <div class="panel-heading panel_title">
-                  <div class="cross closed"></div>
-                  <a data-toggle="collapse" data-parent="#accordion_1" href="#collapse1_1" class="collapsed" aria-expanded="false">
-                    Стоимость и условия доставки
-                  </a>
-                </div>
-                <div id="collapse1_1" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <p class="category_title">some content</p>
-                  </div>
-                </div>
-              </div>
-              <div class="panel ">
-                <div class="panel-heading panel_title">
-                  <div class="cross closed"></div>
-                  <a data-toggle="collapse" data-parent="#accordion_1" href="#collapse1_2" class="collapsed" aria-expanded="false">
-                    Подъем и занос
-                  </a>
-                </div>
-                <div id="collapse1_2" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <div class="table-responsive">
-                      <table class="shipping_table">
-                        <tr>
-                          <th class="left-col">Нименование</th>
-                          <th class="right-col">Цена</th>
-                        </tr>
-                        <tr>
-                          <td>Установка душевых кабин</td>
-                          <td>3 000 руб.</td>
-                        </tr>
-                        <tr>
-                          <td>Установка душевых кабин</td>
-                          <td>7 000 руб.</td>
-                        </tr>
-                        <tr>
-                          <td>Установка душевых кабин</td>
-                          <td>2 000 руб.</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="map" id="map-moscow"> </div>
-          </div>
-          <div id="st-petersburg" class="tab-pane fade">
-            <h3>Санкт-Петербург и Ленинградская область</h3>
-            <div class="panel-group" id="accordion_2">
-              <div class="panel ">
-                <div class="panel-heading panel_title">
-                  <div class="cross closed"></div>
-                  <a data-toggle="collapse" data-parent="#accordion_2" href="#collapse2_1" class="collapsed" aria-expanded="false">
-                    Стоимость и условия доставки
-                  </a>
-                </div>
-                <div id="collapse2_1" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <p class="category_title">some content</p>
-                  </div>
-                </div>
-              </div>
-              <div class="panel ">
-                <div class="panel-heading panel_title">
-                  <div class="cross closed"></div>
-                  <a data-toggle="collapse" data-parent="#accordion_1" href="#collapse2_2" class="collapsed" aria-expanded="false">
-                    Подъем и занос
-                  </a>
-                </div>
-                <div id="collapse2_2" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <div class="table-responsive">
-                      <table class="shipping_table">
-                        <tr>
-                          <th class="left-col">Нименование</th>
-                          <th class="right-col">Цена</th>
-                        </tr>
-                        <tr>
-                          <td>Установка душевых кабин</td>
-                          <td>3 000 руб.</td>
-                        </tr>
-                        <tr>
-                          <td>Установка душевых кабин</td>
-                          <td>7 000 руб.</td>
-                        </tr>
-                        <tr>
-                          <td>Установка душевых кабин</td>
-                          <td>2 000 руб.</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="region" class="tab-pane fade">
-            <h3>Регионы</h3>
-            <div class="panel-group" id="accordion_3">
-              <div class="panel ">
-                <div class="panel-heading panel_title">
-                  <div class="cross closed"></div>
-                  <a data-toggle="collapse" data-parent="#accordion_2" href="#collapse3_1" class="collapsed" aria-expanded="false">
-                    Стоимость и условия доставки
-                  </a>
-                </div>
-                <div id="collapse3_1" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <p class="category_title">some content</p>
-                  </div>
-                </div>
-              </div>
-              <div class="panel ">
-                <div class="panel-heading panel_title">
-                  <div class="cross closed"></div>
-                  <a data-toggle="collapse" data-parent="#accordion_1" href="#collapse3_2" class="collapsed" aria-expanded="false">
-                    Подъем и занос
-                  </a>
-                </div>
-                <div id="collapse3_2" class="panel-collapse collapse" aria-expanded="false">
-                  <div class="panel-body">
-                    <div class="table-responsive">
-                      <table class="shipping_table">
-                        <tr>
-                          <th class="left-col">Нименование</th>
-                          <th class="right-col">Цена</th>
-                        </tr>
-                        <tr>
-                          <td>Установка душевых кабин</td>
-                          <td>3 000 руб.</td>
-                        </tr>
-                        <tr>
-                          <td>Установка душевых кабин</td>
-                          <td>7 000 руб.</td>
-                        </tr>
-                        <tr>
-                          <td>Установка душевых кабин</td>
-                          <td>2 000 руб.</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h1 class="border-top">Акриловая ванна Roca Easy</h1>
 
-    <div class="row">
-      <div class="col-xs-12">
-        <h2 class="card_sub-header card_sub-header-sm"><span>Смотрите так же полезные страницы</span></h2>
-        <div class="link-block clearfix">
-          <div class="col-md-3 col-sm-6 no-padding-left">
-            <ul class="list-unstyled">
-              <li class="link-block_item"><a href="#">Оплата</a></li>
-              <li class="link-block_item"><a href="#">Доставка</a></li>
-              <li class="link-block_item"><a href="#">Установка</a></li>
-              <li class="link-block_item"><a href="#">Информация</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <ul class="list-unstyled">
-              <li class="link-block_item"><a href="#">О нас</a></li>
-              <li class="link-block_item"><a href="#">Сертификаты</a></li>
-              <li class="link-block_item"><a href="#">Отзывы</a></li>
-              <li class="link-block_item"><a href="#">Контакты</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <ul class="list-unstyled">
-              <li class="link-block_item"><a href="#">Каталог</a></li>
-              <li class="link-block_item"><a href="#">Специальные предложения</a></li>
-              <li class="link-block_item"><a href="#">Кредиты</a></li>
-              <li class="link-block_item"><a href="#">Новости</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <ul class="list-unstyled">
-              <li class="link-block_item"><a href="#">Информация</a></li>
-              <li class="link-block_item"><a href="#">Руководство</a></li>
-              <li class="link-block_item"><a href="#">Отчётность</a></li>
-              <li class="link-block_item"><a href="#">Документы</a></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
   </div>
-  </div>
-
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -1468,12 +1367,6 @@
             <a href="" class="pull-left"><i class="icon g-plus"></i></a>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="btn-up">
-      <div class="btn-up_content">
-        <span class="icon up"></span>
-        <p>вверх</p>
       </div>
     </div>
   </footer>

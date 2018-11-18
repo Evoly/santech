@@ -2359,13 +2359,24 @@ $(document).ready(function () {
   });
 
 
-
   $('.js-file-del').on('click', function () {
       $('#file-upload[type=file]').val('');
       droppedFiles = false;
       $(this).addClass('hidden');
       $(this).siblings('.js-file-name').text('');
-  })
+  });
+
+  $(".linkToDelivery").on("click", function(event) {
+   event.preventDefault();
+   var href = $(this).attr('href');
+   var id = $(href);
+   $(id).collapse('show');
+   var cross = $(id).siblings('.panel-heading').children('.cross');
+   cross.removeClass('closed');
+
+    var top = $(id).offset().top-70;
+    $('body,html').animate({scrollTop: top}, 1500);
+ });
 
 });
 
