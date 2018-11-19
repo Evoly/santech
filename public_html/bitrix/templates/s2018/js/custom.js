@@ -2378,6 +2378,12 @@ $(document).ready(function () {
     $('body,html').animate({scrollTop: top}, 1500);
  });
 
+  $('.price_wrap').each(function(){
+    if ($(this).children('.price').hasClass('old_price')) {
+      $(this).addClass('price_wrap_old-price');
+    }
+  });
+
 });
 
 // yandex map
