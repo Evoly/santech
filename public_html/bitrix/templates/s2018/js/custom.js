@@ -582,7 +582,14 @@ $(function(){
     function getURLParameter(name, str) {
       return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(str) || [null, ''])[1].replace(/\+/g, '%20')) || null;
     }
-
+    function checkClass(el) {
+      const $this = el;
+      el.each(function(){
+        if ($(this).children('.price').hasClass('old_price')) {
+          $(this).addClass('price_wrap_old-price');
+        }
+      });
+    }
     $('.getMore-wrap').on('click', 'a.pag-page', function(){
         var $this = $(this);
         LOADER.show();
@@ -590,8 +597,6 @@ $(function(){
             var $pageNavigation = $(html).find('.getMore-wrap .page-navigation');
             var $catalogItems = $('section.catalog_items');
             $catalogItems.html($(html).find('section.catalog_items').html());
-
-
             var title = $('title').text();
             var find = title.indexOf(', страница ');
             var newNum = getURLParameter('PAGEN_1', $this.attr('href'));
@@ -605,11 +610,6 @@ $(function(){
             } else {
                 $('title').text(title + ', страница ' + newNum);
             }
-
-            // console.log(find)
-
-
-
             if($pageNavigation.length > 0){
                 $('.getMore-wrap').html($pageNavigation);
             } else {
@@ -618,6 +618,7 @@ $(function(){
             chLocation(delPrm(delPrm(delPrm($this.attr('href'),'ajax_catalog'), 'PAGE_ELEMENT_COUNT'),'sort'));
             $("html, body").delay(100).animate({scrollTop: $catalogItems.offset().top - 100}, 500, undefined, function () {
             });
+
             LOADER.hide();
         });
         return false;
@@ -2378,12 +2379,8 @@ $(document).ready(function () {
     $('body,html').animate({scrollTop: top}, 1500);
  });
 
-  $('.price_wrap').each(function(){
-    if ($(this).children('.price').hasClass('old_price')) {
-      $(this).addClass('price_wrap_old-price');
-    }
-  });
 
+ checkClass($('.price_wrap'));
 });
 
 // yandex map
