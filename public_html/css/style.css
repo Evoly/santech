@@ -4805,7 +4805,8 @@ p.tab-pane_set_item {
   .shipping_table tr {
     height: 55px; }
   .shipping_table td {
-    padding-left: 20px; }
+    padding-left: 20px;
+    padding-right: 10px; }
   .shipping_table th {
     background-color: #efeeda;
     text-align: center; }
