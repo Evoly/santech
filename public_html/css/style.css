@@ -2679,7 +2679,8 @@ ul.cities-list {
     padding-bottom: 25px;
     text-align: center;
     margin-top: 13px;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    text-transform: inherit; }
     .card_faq .card_sub-header::after {
       display: none; }
 .card_faq-all {
@@ -3122,13 +3123,10 @@ p.tab-pane_set_item {
       .sale-block_grid [class*="col-"] {
         margin-bottom: -100px;
         padding-bottom: 100px; } }
-  .sale-block_left .img-wrap {
+  .sale-block_left img {
     width: 100px;
     height: 100px;
-    padding: 1px; }
-  .sale-block_left img {
-    width: 100%;
-    height: 100%;
+    margin: 1px;
     object-fit: cover; }
   .sale-block_left p {
     margin-bottom: 5px; }
@@ -4283,6 +4281,7 @@ p.tab-pane_set_item {
     .feedback-catalog_img img {
       max-width: 100%; }
   .feedback-catalog_header {
+    display: block;
     font-size: 18px;
     font-weight: 700;
     color: #444444;

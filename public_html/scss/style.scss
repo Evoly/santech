@@ -3462,6 +3462,7 @@ ul.cities-list{
             text-align: center;
             margin-top: 13px;
             margin-bottom: 0px;
+            text-transform: inherit;
 
             &::after {
               display: none;
@@ -4043,13 +4044,12 @@ p.tab-pane_set_item {
 
     &_left {
         .img-wrap {
-          width: 100px;
-          height: 100px;
-          padding: 1px;
+
         }
         img {
-            width: 100%;
-            height: 100%;
+          width: 100px;
+          height: 100px;
+          margin: 1px;
             object-fit: cover;
         }
         p {
@@ -5571,7 +5571,6 @@ p.tab-pane_set_item {
             padding-left: 15px;
         }
     }
-
     &_img {
         width: 170px;
         max-width: 100%;
@@ -5583,6 +5582,7 @@ p.tab-pane_set_item {
         }
     }
     &_header {
+        display: block;
         font-size: 18px;
         font-weight: 700;
         color: $text_color;

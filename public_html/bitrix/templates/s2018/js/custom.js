@@ -11,6 +11,14 @@ var LOADER = {
         $('#preloader').hide();
     }
 };
+function checkClass(el) {
+  const $this = el;
+  el.each(function(){
+    if ($(this).children('.price').hasClass('old_price')) {
+      $(this).addClass('price_wrap_old-price');
+    }
+  });
+}
 $(function(){
     var owlItemsOptions = {
         items : 4,
@@ -582,14 +590,6 @@ $(function(){
     function getURLParameter(name, str) {
       return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(str) || [null, ''])[1].replace(/\+/g, '%20')) || null;
     }
-    function checkClass(el) {
-      const $this = el;
-      el.each(function(){
-        if ($(this).children('.price').hasClass('old_price')) {
-          $(this).addClass('price_wrap_old-price');
-        }
-      });
-    }
     $('.getMore-wrap').on('click', 'a.pag-page', function(){
         var $this = $(this);
         LOADER.show();
@@ -618,7 +618,7 @@ $(function(){
             chLocation(delPrm(delPrm(delPrm($this.attr('href'),'ajax_catalog'), 'PAGE_ELEMENT_COUNT'),'sort'));
             $("html, body").delay(100).animate({scrollTop: $catalogItems.offset().top - 100}, 500, undefined, function () {
             });
-
+            checkClass($('.price_wrap'));
             LOADER.hide();
         });
         return false;
