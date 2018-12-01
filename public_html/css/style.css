@@ -4908,13 +4908,23 @@ p.tab-pane_set_item {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 25px;
-  line-height: 1; }
+  line-height: 1;
+  color: inherit; }
   @media (max-width: 767px) {
     .articles_header {
       margin-top: 15px; } }
 
+.affix {
+  top: 40px; }
+
+@media (min-width: 992px) {
+  .article_grid .col1 {
+    width: 20.91667%; }
+  .article_grid .col2 {
+    width: 79.08333%; } }
 .article_content {
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 50px; }
   .article_content p {
     margin-bottom: 20px; }
 .article_img {
@@ -4950,6 +4960,23 @@ p.tab-pane_set_item {
     height: 3px;
     border-radius: 50%;
     background-color: #27ae60; }
+.article_nav {
+  max-width: 195px;
+  max-height: 200px; }
+.article_nav > li > a:hover, .article_nav > li > a:focus {
+  text-decoration: none;
+  background-color: inherit; }
+.article_nav > li > a {
+  position: relative;
+  display: block;
+  padding: 0;
+  padding-left: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.vertical-track3 {
+  width: 3px;
+  background-color: #fff; }
 
 .callme-modal {
   position: relative;

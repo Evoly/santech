@@ -1900,6 +1900,15 @@ $(document).ready(function () {
             easingDuration: 100
         });
     }
+    if ($('.article_nav').length > 0) {
+        $('.article_nav').enscroll({
+            verticalTrackClass: 'vertical-track3',
+            verticalHandleClass: 'vertical-handle2',
+            minScrollbarLength: 35,
+            drawCorner: false,
+            easingDuration: 100
+        });
+    }
 
 
     $(function () {
@@ -2435,6 +2444,16 @@ $(document).ready(function () {
   if (e.target!=container[0]&&container.has(e.target).length===0){
     $('#header_search_result').text('');
     }
+});
+$('.article_nav a').on("click", function(event) {
+  event.preventDefault();
+  $('.article_nav li').removeClass('active')
+  var id = $(this).attr('href'),
+      top = $(id).offset().top;
+  $(this).parent().addClass('active');
+  $('body,html').animate({
+    scrollTop: top
+  }, 1500);
 });
 });
 
