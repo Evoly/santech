@@ -1900,15 +1900,15 @@ $(document).ready(function () {
             easingDuration: 100
         });
     }
-    if ($('.article_nav').length > 0) {
-        $('.article_nav').enscroll({
-            verticalTrackClass: 'vertical-track3',
-            verticalHandleClass: 'vertical-handle2',
-            minScrollbarLength: 35,
-            drawCorner: false,
-            easingDuration: 100
-        });
-    }
+    // if ($('.article_nav').length > 0) {
+    //     $('.article_nav').enscroll({
+    //         verticalTrackClass: 'vertical-track3',
+    //         verticalHandleClass: 'vertical-handle2',
+    //         minScrollbarLength: 35,
+    //         drawCorner: false,
+    //         easingDuration: 100
+    //     });
+    // }
 
 
     $(function () {
