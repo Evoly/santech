@@ -2446,21 +2446,25 @@ $(document).ready(function () {
     }
 });
 if ($('.article_content').length > 0) {
-  console.log($('.article_content').length);
+
+  // nav width
+  var navWidth = $('.articles_wrapper .nav').parent().innerWidth();
+  $('.articles_wrapper .nav').css('width', navWidth);
+  $(window).on('resize', () => {
+    var navWidth = $('.articles_wrapper .nav').parent().innerWidth();
+    $('.articles_wrapper .nav').css('width', navWidth);
+});
+
   var articleTitle = $('.article_content h2');
-  console.log(articleTitle);
   var counter = 1;
   articleTitle.each(function(){
     var id = 'item_' + counter + '';
     $(this).attr('id', id);
     var navText = $(this).html();
-    console.log('navText', navText);
-    var navItem = '<li><a class="product-list_item" href="'+id+'">'+navText+'</a></li>';
+    var navItem = '<li><a class="product-list_item" href="'+id+'" title="'+navText+'">'+navText+'</a></li>';
     $('.article_nav').append(navItem);
     counter += 1;
-  })
-
-
+  });
 }
 $(document).on("click", '.article_nav a', function(event) {
   console.log('this', $(this));
