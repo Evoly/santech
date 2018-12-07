@@ -6342,6 +6342,7 @@ p.tab-pane_set_item {
 //articles
 .product-list {
     border: 1px solid #d4e0e6;
+    border-radius: 0;
     li {
       padding-top: 14px;
       padding-right: 14px;
@@ -6400,11 +6401,21 @@ p.tab-pane_set_item {
       color: $light_gray;
     }
   }
+  &_nav {
+    border: none;
+  }
 }
 
 .articles {
   &_wrapper {
     padding-bottom: 55px;
+
+    .list-unstyled {
+      margin-bottom: 0;
+    }
+    .nav {
+      max-width: 250px;
+    }
   }
   &_sort {
     border-top: 1px solid $border_color;
@@ -6455,10 +6466,16 @@ p.tab-pane_set_item {
   &_grid {
     @media (min-width: 992px) {
       .col1 {
-          width: 20.91667%;
+          width: 19.667%;
       }
       .col2 {
-        width: 79.08333%;
+        width: 80.333%;
+      }
+      .col3 {
+        width: 76%;
+      }
+      .col4 {
+        width: 24%;
       }
     }
   }
@@ -6467,6 +6484,11 @@ p.tab-pane_set_item {
     margin-bottom: 50px;
     p {
       margin-bottom: 20px;
+    }
+    // TODO:
+    img {
+      max-width: 100% !important;
+      width: 100% !important;
     }
   }
 
@@ -6513,8 +6535,12 @@ p.tab-pane_set_item {
     }
   }
   &_nav {
-    max-width: 195px;
-    max-height: 200px;
+    max-width: 100%;
+    width: auto !important;
+    max-height: calc(100vh - 400px);
+    // max-height: calc(100vh - 400px);
+    padding-right: 0 !important;
+    border: 1px solid $border-color;
   }
   &_nav > li > a:hover,
   &_nav > li > a:focus {
@@ -6532,7 +6558,7 @@ p.tab-pane_set_item {
 }
 .vertical-track3 {
   width: 3px;
-  background-color: #fff; 
+  background-color: transparent;
 }
 
 .callme-modal {

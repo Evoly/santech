@@ -1900,15 +1900,15 @@ $(document).ready(function () {
             easingDuration: 100
         });
     }
-    // if ($('.article_nav').length > 0) {
-    //     $('.article_nav').enscroll({
-    //         verticalTrackClass: 'vertical-track3',
-    //         verticalHandleClass: 'vertical-handle2',
-    //         minScrollbarLength: 35,
-    //         drawCorner: false,
-    //         easingDuration: 100
-    //     });
-    // }
+    if ($('.article_nav').length > 0) {
+        $('.article_nav').enscroll({
+            verticalTrackClass: 'vertical-track3',
+            verticalHandleClass: 'vertical-handle2',
+            minScrollbarLength: 35,
+            drawCorner: false,
+            easingDuration: 100
+        });
+    }
 
 
     $(function () {
@@ -2445,11 +2445,29 @@ $(document).ready(function () {
     $('#header_search_result').text('');
     }
 });
-$('.article_nav a').on("click", function(event) {
+if ($('.article_content').length > 0) {
+  console.log($('.article_content').length);
+  var articleTitle = $('.article_content h2');
+  console.log(articleTitle);
+  var counter = 1;
+  articleTitle.each(function(){
+    var id = 'item_' + counter + '';
+    $(this).attr('id', id);
+    var navText = $(this).html();
+    console.log('navText', navText);
+    var navItem = '<li><a class="product-list_item" href="'+id+'">'+navText+'</a></li>';
+    $('.article_nav').append(navItem);
+    counter += 1;
+  })
+
+
+}
+$(document).on("click", '.article_nav a', function(event) {
+  console.log('this', $(this));
   event.preventDefault();
   $('.article_nav li').removeClass('active')
   var id = $(this).attr('href'),
-      top = $(id).offset().top;
+      top = $('#'+id+'').offset().top;
   $(this).parent().addClass('active');
   $('body,html').animate({
     scrollTop: top
